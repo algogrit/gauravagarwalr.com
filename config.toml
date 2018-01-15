@@ -1,3 +1,47 @@
+## Basic Configuration
 baseURL = "https://gauravagarwalr.com/"
+builddrafts = false
+canonifyurls = false
 languageCode = "en-us"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+theme = "goa"
+
+author = "Gaurav Agarwal"
 title = "Gaurav Agarwal"
+
+[params]
+author = "Gaurav Agarwal"
+intro = "Software Consultant"
+description = "Now @Tarka Labs. Previously @BrowserStack and @ThoughtWorks."
+authorimage = "headshot.png"
+dateformat = "Jan 15, 2018"
+
+## Site Meta Settings
+[params.meta]
+description = "Simple minimalist theme"
+keywords = "minimalist,blog,goa,hugo,developer"
+
+## Social Accounts
+[params.social]
+github = "gauravagarwalr"
+linkedin = "gauravagarwalr"
+twitter = "gauravagarwalr"
+stackoverflow = "1268651"
+email = "gauravagarwalr@gmail.com"
+
+## Extras
+[params.extra]
+copyright = "© 2018. Gaurav Agarwal. [All Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
+poweredby = false
+highlightjs = true
+
+## Main Menu
+[[menu.main]]
+    name = "blog"
+    weight = 100
+    identifier = "blog"
+    url = "https://blog.gauravagarwalr.com"
