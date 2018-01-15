@@ -35,7 +35,7 @@ email = "gauravagarwalr@gmail.com"
 
 ## Extras
 [params.extra]
-copyright = "© 2018. Gaurav Agarwal. [All Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
+copyright = "© {year}. Gaurav Agarwal. [All Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
 poweredby = false
 highlightjs = true
 
