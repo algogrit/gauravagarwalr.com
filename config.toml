@@ -17,7 +17,7 @@ title = "Gaurav Agarwal"
 author = "Gaurav Agarwal"
 intro = "Software Consultant"
 description = "Now @Tarka Labs. Previously @BrowserStack and @ThoughtWorks."
-authorimage = "static/img/headshot.png"
+authorimage = "img/headshot.png"
 dateformat = "Jan 15, 2018"
 
 ## Site Meta Settings
