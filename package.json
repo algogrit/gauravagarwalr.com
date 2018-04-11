@@ -1,0 +1,41 @@
+{
+  "name": "gauravagarwalr.com",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Site",
+  "main": "index.js",
+  "dependencies": {
+    "startbootstrap-resume": "^4.0.0"
+  },
+  "devDependencies": {
+    "@phenomic/cli": "^1.0.0-beta.2",
+    "@phenomic/core": "^1.0.0-beta.2",
+    "@phenomic/preset-react-app": "^1.0.0-beta.2",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-router": "^3.2.1"
+  },
+  "scripts": {
+    "start": "phenomic start",
+    "build": "phenomic build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gauravagarwalr/gauravagarwalr.com.git"
+  },
+  "keywords": [
+    "gauravagarwalr",
+    "portfolio"
+  ],
+  "author": "Gaurav Agarwal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gauravagarwalr/gauravagarwalr.com/issues"
+  },
+  "homepage": "https://github.com/gauravagarwalr/gauravagarwalr.com#readme",
+  "phenomic": {
+    "presets": [
+      "@phenomic/preset-react-app"
+    ]
+  }
+}
