@@ -23,7 +23,7 @@ const EXPERIENCE_DESCRIPTION = [
     startDate: 'September 2013',
     endDate: 'October 2014',
     description: `Managing internal servers to the satisfaction of internal stake holders. Analyzing and cleaning up billing data.
-    Building dashboards for internal metrics. Stabilizing system dealing with payments and another system dealing with customer facing near real-time dashboard for logs.`
+    Building dashboards for internal metrics. Stabilizing systems dealing with payments and another system which was a customer-facing near real-time dashboard for automation logs.`
   },
   {
     title: 'Consultant',
