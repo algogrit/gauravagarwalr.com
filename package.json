@@ -1,16 +1,24 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "gauravagarwalr",
+  "description": "Gaurav Agarwal, Software Engineer",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Gaurav Agarwal <gaurav.agarwal.r@gmail.com>",
   "dependencies": {
+    "bootstrap": "^4.1.0",
+    "devicons": "^1.8.0",
+    "font-awesome": "^4.7.0",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
+    "gatsby-plugin-google-fonts": "0.0.4",
     "gatsby-plugin-react-helmet": "^2.0.10",
-    "react-helmet": "^5.2.0"
+    "gatsby-plugin-sass": "^1.0.25",
+    "react-helmet": "^5.2.0",
+    "startbootstrap-resume": "^4.0.0"
   },
   "keywords": [
-    "gatsby"
+    "gauravagarwalr",
+    "consultant",
+    "software engineer"
   ],
   "license": "MIT",
   "scripts": {

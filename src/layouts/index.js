@@ -2,27 +2,26 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '../components/header'
-import './index.css'
+import Sidebar from '../components/sidebar'
+
+import 'bootstrap/scss/bootstrap.scss'
+import 'startbootstrap-resume/css/resume.css'
+
+import 'font-awesome/css/font-awesome.css'
+import 'devicons/css/devicons.css'
 
 const Layout = ({ children, data }) => (
-  <div>
+  <div id="page-top">
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Resume and Portfolio' },
+        { name: 'keywords', content: 'gauravagarwalr, consultant, software engineer' },
+        { name: 'author', content: 'Gaurav Agarwal' }
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
+    <Sidebar/>
+    <div className="container-fluid p-0">
       {children()}
     </div>
   </div>
