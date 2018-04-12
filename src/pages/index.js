@@ -6,7 +6,7 @@ import Link from 'gatsby-link'
 const socialLinks = [
   {
     icon: 'fa-twitter',
-    href: 'http://twitter.com/gauravagarwalr'
+    href: 'https://twitter.com/gauravagarwalr'
   },
   {
     icon: 'fa-linkedin',
@@ -33,16 +33,22 @@ const socialLinks = [
 const IndexPage = () => (
   <section className="resume-section p-3 p-lg-5 d-flex d-column" id="about">
     <div className="my-auto">
-      <h1 className="mb-0">Gaurav
+      <h1 className="mb-0 header-name">Gaurav
         <span className="text-primary">Agarwal</span>
       </h1>
       <div className="subheading mb-5">
-        17/8, Vadamalai Street, Vepery · Chennai, Tamil Nadu 600007
+        <p>
+          17/8 · Vadamalai Street · Vepery · Chennai · Tamil Nadu · 600007
+        </p>
+        <p>
+          <a href="tel:+918668140137">+91 86681 40137</a> · <a href="tel:+1 (408) 498-5176">+1 (408) 498-5176</a> · <a href="mailto:gauravagarwalr@gmail.com">gaurav.agarwal.r@gmail.com</a>
+        </p>
       </div>
-      <div className="subheading mb-5">
-        <a href="tel:+918668140137">+91 86681 40137</a> · <a href="tel:+1 (408) 498-5176">+1 (408) 498-5176</a> · <a href="mailto:gauravagarwalr@gmail.com">gaurav.agarwal.r@gmail.com</a>
+      <div className="mb-5">
+        <p>I am a Generalist Software Engineer who has worked across the stack and is equally comfortable with setting up servers as well as writing visualizations.</p>
+
+        <p>I am a technical consultant. Hit me up and we can discuss how I can help you in bringing your next best idea to idea.</p>
       </div>
-      <p className="mb-5"></p>
       <ul className="list-inline list-social-icons mb-0">
         {
           socialLinks.map((socialLink) => {
