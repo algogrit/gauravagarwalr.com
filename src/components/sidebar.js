@@ -30,9 +30,6 @@ const Sidebar = () => (
         <li className="nav-item">
           <a className="nav-link js-scroll-trigger" href="#interests">Interests</a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link js-scroll-trigger" href="#awards">Awards</a>
-        </li>
       </ul>
     </div>
   </nav>
