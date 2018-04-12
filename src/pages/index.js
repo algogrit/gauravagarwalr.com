@@ -47,7 +47,7 @@ const IndexPage = () => (
       <div className="mb-5">
         <p>I am a Generalist Software Engineer who has worked across the stack and is equally comfortable with setting up servers as well as writing visualizations.</p>
 
-        <p>I am a technical consultant. Hit me up and we can discuss how I can help you in bringing your next best idea to idea.</p>
+        <p>I am a technical consultant. Hit me up and we can discuss how I can help you in bringing your next big idea to life.</p>
       </div>
       <ul className="list-inline list-social-icons mb-0">
         {
