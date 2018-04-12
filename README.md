@@ -7,4 +7,6 @@ Built using [Gatsby](https://www.gatsbyjs.org). Using https://github.com/Blackro
 
 ## Dev
 
+    $ yarn install
+
     $ npm run develop
