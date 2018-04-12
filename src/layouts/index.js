@@ -25,9 +25,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Sidebar/>
-    <div className="container-fluid p-0">
-      {children()}
-    </div>
+    {children()}
   </div>
 )
 
