@@ -53,7 +53,7 @@ const AboutSection = () => (
         </p>
 
         <p>
-          I am a full stack developer, willing to get his hands dirty in order to get things moving. I don't believe in working in silos. I find it to be comforting to understand all layers of a stack.
+          I am a full stack developer, willing to get his hands dirty in order to get things moving. I don't believe in working in silos. I find it comforting to understand all layers of a stack.
         </p>
 
         <p>I am a freelance technical consultant. Hit me up and we can discuss how I can help you in bringing your next big idea to life.</p>
