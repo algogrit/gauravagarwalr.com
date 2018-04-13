@@ -8,8 +8,6 @@ import 'bootstrap/scss/bootstrap.scss'
 import 'startbootstrap-resume/css/resume.css'
 
 import 'font-awesome/css/font-awesome.css'
-import 'devicons/css/devicons.css'
-import 'devicon/devicon.css'
 
 import '../../src/assets/styles/index.scss'
 

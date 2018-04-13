@@ -6,8 +6,6 @@
   "dependencies": {
     "bootstrap": "^4.1.0",
     "classnames": "^2.2.5",
-    "devicon": "^2.0.0",
-    "devicons": "^1.8.0",
     "font-awesome": "^4.7.0",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",

@@ -5,16 +5,6 @@ import React from 'react'
 
 import { withPrefix } from 'gatsby-link'
 
-// http://vorillaz.github.io/devicons/#/cheat
-const Devicons = ({label, tooltip}) => (
-  <i className={classNames("devicons", label)} title={tooltip}></i>
-)
-
-// http://konpa.github.io/devicon/
-const Devicon = ({label, tooltip}) => (
-  <i className={label} title={tooltip}></i>
-)
-
 // https://icongr.am/devicon
 const Icongram = ({label, tooltip}) => {
   let src = `https://icongr.am/devicon/${label}.svg`
