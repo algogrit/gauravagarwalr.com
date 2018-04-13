@@ -32,10 +32,10 @@ const SKILLS = [
   {
     title: "Programming Languages",
     icons: [
-      { tooltip: 'Ruby', label: 'ruby-plain', type: Icongram },
+      { tooltip: 'Ruby', filetype: 'png' },
       { tooltip: 'JavaScript', label: 'javascript-plain', type: Icongram },
       { tooltip: 'Go', label: 'go-original', type: Icongram },
-      { tooltip: 'Python', label: 'python-plain', type: Icongram },
+      { tooltip: 'Python' },
       { tooltip: 'HTML5', label: 'html5-plain', type: Icongram },
       { tooltip: 'CSS3', label: 'css3-plain', type: Icongram },
       { tooltip: 'Bash' },
@@ -46,20 +46,23 @@ const SKILLS = [
     ]
   },
   {
-    title: "Tools",
+    title: "Tools & Frameworks",
     icons: [
       { tooltip: 'Rails', label: 'rails-plain', type: Icongram },
       { tooltip: 'Sinatra' },
-      { tooltip: 'Lodash' },
+      { tooltip: 'Phoenix' },
+      { tooltip: 'Gorilla', filetype: 'png' },
       { tooltip: 'React', label: 'react-original', type: Icongram },
+      { tooltip: 'Vue' },
+      { tooltip: 'Lodash' },
       { tooltip: 'Bootstrap', label: 'bootstrap-plain', type: Icongram },
-      { tooltip: 'Foundation', label: 'foundation-plain', type: Icongram },
       { tooltip: 'Webpack' },
       { tooltip: 'Babel' },
       { tooltip: 'Nodejs', label: 'nodejs-original-wordmark', type: Icongram },
       { tooltip: 'Less', label: 'less-plain-wordmark', type: Icongram },
       { tooltip: 'SASS', label: 'sass-original', type: Icongram },
       { tooltip: 'D3', label: 'd3' },
+      { tooltip: 'VTK.js' },
     ]
   },
   {
@@ -68,12 +71,13 @@ const SKILLS = [
       { tooltip: 'Postgres', label: 'postgresql-plain', type: Icongram },
       { tooltip: 'MySQL', label: 'mysql-plain', type: Icongram },
       { tooltip: 'Redis', label: 'redis-plain', type: Icongram },
+      { tooltip: 'Sqlite' },
       { tooltip: 'Docker', label: 'docker-plain', type: Icongram },
       { tooltip: 'Kubernetes' },
       { tooltip: 'Nginx', label: 'nginx-original', type: Icongram },
+      { tooltip: 'Git', label: 'git-original', type: Icongram },
       { tooltip: 'CircleCI', label: 'circleci' },
       { tooltip: 'Jenkins' },
-      { tooltip: 'Git' },
     ]
   },
   {
@@ -84,7 +88,6 @@ const SKILLS = [
       { tooltip: 'Raspberry Pi' },
       { tooltip: 'Ubuntu' },
       { tooltip: 'iOS', label: 'apple-original', type: Icongram },
-      { tooltip: 'Android', label: 'android-plain', type: Icongram },
       { tooltip: 'AWS', label: 'amazonwebservices-original', type: Icongram },
       { tooltip: 'Google Cloud Platform' },
       { tooltip: 'Heroku', label: 'heroku-plain', type: Icongram },
