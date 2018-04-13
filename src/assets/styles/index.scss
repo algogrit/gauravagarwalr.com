@@ -31,3 +31,12 @@ a:hover, a:focus, a:active {
     margin-left: 10px;
   }
 }
+
+.list-icons {
+  font-size: 2.5rem;
+
+  .icongram-svg, .raw-svg {
+    height: 2.5rem;
+    width: auto;
+  }
+}

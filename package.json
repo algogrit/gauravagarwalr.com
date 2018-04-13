@@ -6,6 +6,7 @@
   "dependencies": {
     "bootstrap": "^4.1.0",
     "classnames": "^2.2.5",
+    "devicon": "^2.0.0",
     "devicons": "^1.8.0",
     "font-awesome": "^4.7.0",
     "gatsby": "^1.9.247",
@@ -14,6 +15,7 @@
     "gatsby-plugin-netlify-cms": "^1.0.12",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-sass": "^1.0.25",
+    "lodash": "^4.17.5",
     "react-helmet": "^5.2.0",
     "startbootstrap-resume": "^4.0.0"
   },
