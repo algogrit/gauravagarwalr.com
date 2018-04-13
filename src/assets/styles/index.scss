@@ -3,7 +3,7 @@
 }
 
 #sideNav {
-  /* TODO: Linear Gradient */
+  background-image: linear-gradient(to bottom, #46BE77 0%, #107491 100%);
 }
 
 .text-primary {
@@ -15,19 +15,19 @@ a {
 }
 
 .list-social-icons a:hover {
-  color: #107491;
+  color: #46BE77;
 }
 
 .list-icons .list-inline-item i:hover {
-  color: #107491;
+  color: #46BE77;
+}
+
+a:hover, a:focus, a:active {
+  color: #46BE77;
 }
 
 .header-name {
   span {
     margin-left: 10px;
   }
-}
-
-a:hover, a:focus, a:active {
-  color: #46BE77;
 }
