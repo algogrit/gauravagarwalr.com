@@ -19,7 +19,7 @@ const Layout = ({ children, data }) => (
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Resume and Portfolio' },
-        { name: 'keywords', content: 'gauravagarwalr, consultant, software engineer' },
+        { name: 'keywords', content: 'gauravagarwalr, technical consultant, software engineer, freelance, experienced, developer, programmer, frontend, backend, full stack' },
         { name: 'author', content: 'Gaurav Agarwal' }
       ]}
     />

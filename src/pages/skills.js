@@ -19,13 +19,13 @@ const Devicon = ({label, tooltip}) => (
 const Icongram = ({label, tooltip}) => {
   let src = `https://icongr.am/devicon/${label}.svg`
 
-  return <img src={src} className="icongram-svg" title={tooltip}/>
+  return <img src={src} className="icongram-svg" title={tooltip} alt={tooltip}/>
 }
 
 const RawIcon = ({label, tooltip, filetype = 'svg'}) => {
   let src = withPrefix(`/assets/images/skills/${label}.${filetype}`)
 
-  return <img src={src} className="raw-svg" title={tooltip}/>
+  return <img src={src} className="raw-svg" title={tooltip} alt={tooltip}/>
 }
 
 const SKILLS = [
@@ -61,7 +61,7 @@ const SKILLS = [
       { tooltip: 'Nodejs', label: 'nodejs-original-wordmark', type: Icongram },
       { tooltip: 'Less', label: 'less-plain-wordmark', type: Icongram },
       { tooltip: 'SASS', label: 'sass-original', type: Icongram },
-      { tooltip: 'D3', label: 'd3' },
+      { tooltip: 'D3.js', label: 'd3' },
       { tooltip: 'VTK.js' },
     ]
   },
@@ -116,6 +116,16 @@ const Skill = ({skill}) => {
   )
 }
 
+const WORKFLOW = [
+  "Fault tolerant & resilient architecture",
+  "Micro services communicating using RESTful APIs",
+  "Mobile-First, Responsive Design",
+  "Cross Browser Testing & Debugging",
+  "Cross Functional Teams",
+  "Agile Development & Scrum",
+  "Rapid Prototyping & Early feedback",
+]
+
 const SkillsSection = () => (
   <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
     <div className="my-auto">
@@ -125,22 +135,14 @@ const SkillsSection = () => (
       <div className="skill">
         <div className="subheading mb-3">Workflow</div>
         <ul className="fa-ul mb-0">
-          <li>
-            <i className="fa-li fa fa-check"></i>
-            Mobile-First, Responsive Design
-          </li>
-          <li>
-            <i className="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging
-          </li>
-          <li>
-            <i className="fa-li fa fa-check"></i>
-            Cross Functional Teams
-          </li>
-          <li>
-            <i className="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum
-          </li>
+          {
+            WORKFLOW.map((item) => (
+              <li>
+                <i className="fa-li fa fa-check"></i>
+                {item}
+              </li>
+            ))
+          }
         </ul>
       </div>
     </div>
