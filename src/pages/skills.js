@@ -66,6 +66,7 @@ const SKILLS = [
       { tooltip: 'Kubernetes' },
       { tooltip: 'Nginx', label: 'nginx-original', type: Icongram },
       { tooltip: 'Git', label: 'git-original', type: Icongram },
+      { tooltip: 'Fastlane', filetype: 'png' },
       { tooltip: 'CircleCI', label: 'circleci' },
       { tooltip: 'Jenkins' },
     ]
