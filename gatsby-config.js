@@ -31,6 +31,12 @@ module.exports = {
         // Setting this parameter is also optional
         respectDNT: true,
       },
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-sentry',
+      options: {
+        dsn: 'https://48a70431b4e94c3da6c392919a8752a6@sentry.io/1189274'
+      },
+    },
   ],
 }
