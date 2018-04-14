@@ -19,6 +19,18 @@ module.exports = {
           'Saira Extra Condensed\:100,200,300,400,500,600,700,800,900'
         ]
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-116511829-2",
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+      },
     }
   ],
 }
