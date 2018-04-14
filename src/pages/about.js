@@ -5,31 +5,38 @@ import React from 'react'
 const SOCIAL_LINKS = [
   {
     icon: 'fa-skype',
-    href: 'skype:gauravagarwalr'
+    href: 'skype:gauravagarwalr',
+    title: 'Skype'
   },
   {
     icon: 'fa-twitter',
-    href: 'https://twitter.com/gauravagarwalr'
+    href: 'https://twitter.com/gauravagarwalr',
+    title: 'Twitter'
   },
   {
     icon: 'fa-linkedin',
-    href: 'https://www.linkedin.com/in/gauravagarwalr'
+    href: 'https://www.linkedin.com/in/gauravagarwalr',
+    title: 'Linkedin'
   },
   {
     icon: 'fa-github',
-    href: 'https://github.com/gauravagarwalr'
+    href: 'https://github.com/gauravagarwalr',
+    title: 'Github'
   },
   {
     icon: 'fa-bitbucket',
-    href: 'https://bitbucket.org/gauravagarwalr'
+    href: 'https://bitbucket.org/gauravagarwalr',
+    title: 'Bitbucket'
   },
   {
     icon: 'fa-stack-overflow',
-    href: 'https://stackoverflow.com/users/1268651/gaurav-agarwal'
+    href: 'https://stackoverflow.com/users/1268651/gaurav-agarwal',
+    title: 'Stack Overflow'
   },
   {
     icon: 'fa-pencil-square',
-    href: 'https://blog.gauravagarwalr.com/'
+    href: 'https://blog.gauravagarwalr.com/',
+    title: 'Blog'
   }
 ]
 
@@ -66,7 +73,7 @@ const AboutSection = () => (
                 <a href={socialLink.href} target="_blank">
                   <span className="fa-stack fa-lg">
                     <i className="fa fa-circle fa-stack-2x"></i>
-                    <i className={classNames("fa fa-stack-1x fa-inverse", socialLink.icon)}></i>
+                    <i className={classNames("fa fa-stack-1x fa-inverse", socialLink.icon)} title={socialLink.title}></i>
                   </span>
                 </a>
               </li>
