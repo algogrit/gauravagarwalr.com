@@ -32,7 +32,7 @@ const EXPERIENCE_DESCRIPTION = [
     endDate: 'September 2013',
     description: `Worked with Senior Developers - practising agile, TDD, pair programming and extreme programming methodologies.
     Learnt a lot of coding techniques, including refactoring and writing clean readable code.
-    Built an extensive set of visualizations, inluding maps based ones, to chart sales distribution across a country.`
+    Built an extensive set of visualizations, including maps based ones, to chart sales distribution across a country.`
   }
 ]
 
