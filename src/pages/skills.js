@@ -60,9 +60,9 @@ const SKILLS = [
     icons: [
       { tooltip: 'Postgres', label: 'postgresql-plain', type: Icongram },
       { tooltip: 'MySQL', label: 'mysql-plain', type: Icongram },
-      { tooltip: 'Redis', label: 'redis-plain', type: Icongram },
+      { tooltip: 'Redis', label: 'redis-original', type: Icongram },
       { tooltip: 'Sqlite' },
-      { tooltip: 'Docker', label: 'docker-plain', type: Icongram },
+      { tooltip: 'Docker', label: 'docker-original', type: Icongram },
       { tooltip: 'Kubernetes' },
       { tooltip: 'Nginx', label: 'nginx-original', type: Icongram },
       { tooltip: 'Git', label: 'git-original', type: Icongram },
