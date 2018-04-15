@@ -48,7 +48,7 @@ const SKILLS = [
       { tooltip: 'Bootstrap', label: 'bootstrap-plain', type: Icongram },
       { tooltip: 'Webpack' },
       { tooltip: 'Babel' },
-      { tooltip: 'Nodejs', label: 'nodejs-original-wordmark', type: Icongram },
+      { tooltip: 'Node.js' },
       { tooltip: 'Less', label: 'less-plain-wordmark', type: Icongram },
       { tooltip: 'SASS', label: 'sass-original', type: Icongram },
       { tooltip: 'D3.js', label: 'd3' },
@@ -68,7 +68,7 @@ const SKILLS = [
       { tooltip: 'Git', label: 'git-original', type: Icongram },
       { tooltip: 'Fastlane', filetype: 'png' },
       { tooltip: 'CircleCI', label: 'circleci' },
-      { tooltip: 'Jenkins' },
+      { tooltip: 'Jenkins', filetype: 'png' },
     ]
   },
   {
@@ -77,7 +77,7 @@ const SKILLS = [
       { tooltip: 'Linux', label: 'linux-original', type: Icongram },
       { tooltip: 'Debian', label: 'debian-plain', type: Icongram },
       { tooltip: 'Raspberry Pi' },
-      { tooltip: 'Ubuntu' },
+      { tooltip: 'Ubuntu', filetype: 'png' },
       { tooltip: 'iOS', label: 'apple-original', type: Icongram },
       { tooltip: 'AWS', label: 'amazonwebservices-original', type: Icongram },
       { tooltip: 'Google Cloud Platform' },
