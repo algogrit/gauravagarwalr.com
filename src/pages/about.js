@@ -48,10 +48,7 @@ const AboutSection = () => (
       </h1>
       <div className="subheading mb-5">
         <p>
-          17/8 · Vadamalai Street · Vepery · Chennai · Tamil Nadu · 600007
-        </p>
-        <p>
-          <a href="tel:+918668140137">+91 86681 40137</a> · <a href="tel:+1 (408) 498-5176">+1 (408) 498-5176</a> · <a href="mailto:gauravagarwalr@gmail.com">gaurav.agarwal.r@gmail.com</a>
+          <a href="tel:+1 (408) 498-5176">+1 (408) 498-5176</a> · <a href="mailto:gauravagarwalr@gmail.com">gaurav.agarwal.r@gmail.com</a>
         </p>
       </div>
       <div className="mb-5">
