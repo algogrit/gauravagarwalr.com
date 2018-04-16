@@ -13,7 +13,7 @@ const EDUCATION = [
   {
     institution: 'Doveton Matriculation Higher Secondary School',
     course: 'State Board',
-    specialization: 'Science with Computer Science',
+    specialization: 'Physics, Chemistry, Maths and Computer Science',
     scoreType: 'Marks',
     score: '934',
     startDate: 'May 2006',
