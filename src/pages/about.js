@@ -34,6 +34,11 @@ const SOCIAL_LINKS = [
     title: 'Stack Overflow'
   },
   {
+    icon: 'fa-medium',
+    href: 'https://medium.com/@gauravagarwalr',
+    title: 'Medium'
+  },
+  {
     icon: 'fa-pencil-square',
     href: 'https://blog.gauravagarwalr.com/',
     title: 'Blog'
