@@ -22,7 +22,7 @@ const EDUCATION = [
 ]
 
 const EducationSection = () => (
-  <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+  <section className="resume-section p-5 p-lg-5 d-flex flex-column" id="education">
     <div className="my-auto">
       <h2 className="mb-5">Education</h2>
       {

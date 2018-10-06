@@ -27,8 +27,16 @@ a:hover, a:focus, a:active {
 }
 
 .header-name {
+  font-size: 54px;
+
   span {
     margin-left: 10px;
+  }
+}
+
+.resume-section {
+  h2 {
+    font-size: 48px;
   }
 }
 

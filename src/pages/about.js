@@ -46,17 +46,17 @@ const SOCIAL_LINKS = [
 ]
 
 const AboutSection = () => (
-  <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="about">
+  <section className="resume-section p-5 p-lg-5 d-flex flex-column" id="about">
     <div className="my-auto">
-      <h1 className="mb-0 header-name">Gaurav
+      <h1 className="mb-2 header-name">Gaurav
         <span className="text-primary">Agarwal</span>
       </h1>
-      <div className="subheading mb-5">
+      <div className="subheading mb-0">
         <p>
           <a href="mailto:algogrit@gmail.com">algogrit@gmail.com</a>
         </p>
       </div>
-      <div className="mb-5">
+      <div className="mb-0">
         <p>
           I am a generalist software engineer who has worked across the stack and is equally comfortable with managing and keeping services up and running, as well as creating beautiful 2D and 3D visualizations.
         </p>

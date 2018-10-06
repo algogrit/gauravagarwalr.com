@@ -44,7 +44,7 @@ const EXPERIENCE_DESCRIPTION = [
 ]
 
 const ExperienceSection = () => (
-  <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+  <section className="resume-section p-5 p-lg-5 d-flex flex-column" id="experience">
     <div className="my-auto">
       <h2 className="mb-5">Experience</h2>
       {

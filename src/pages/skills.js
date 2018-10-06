@@ -117,7 +117,7 @@ const WORKFLOW = [
 ]
 
 const SkillsSection = () => (
-  <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+  <section className="resume-section p-5 p-lg-5 d-flex flex-column" id="skills">
     <div className="my-auto">
       <h2 className="mb-5">Skills</h2>
       { SKILLS.map((skill) => <Skill key={skill.title} skill={skill}/>) }
