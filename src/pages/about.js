@@ -46,7 +46,7 @@ const SOCIAL_LINKS = [
 ]
 
 const AboutSection = () => (
-  <section className="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+  <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="about">
     <div className="my-auto">
       <h1 className="mb-0 header-name">Gaurav
         <span className="text-primary">Agarwal</span>
