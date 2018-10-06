@@ -10,22 +10,22 @@ const SOCIAL_LINKS = [
   },
   {
     icon: 'fa-twitter',
-    href: 'https://twitter.com/gauravagarwalr',
+    href: 'https://twitter.com/algogrit',
     title: 'Twitter'
   },
   {
     icon: 'fa-linkedin',
-    href: 'https://www.linkedin.com/in/gauravagarwalr',
+    href: 'https://www.linkedin.com/in/algogrit',
     title: 'Linkedin'
   },
   {
     icon: 'fa-github',
-    href: 'https://github.com/gauravagarwalr',
+    href: 'https://github.com/algogrit',
     title: 'Github'
   },
   {
     icon: 'fa-bitbucket',
-    href: 'https://bitbucket.org/gauravagarwalr',
+    href: 'https://bitbucket.org/algogrit',
     title: 'Bitbucket'
   },
   {
@@ -35,12 +35,12 @@ const SOCIAL_LINKS = [
   },
   {
     icon: 'fa-medium',
-    href: 'https://medium.com/@gauravagarwalr',
+    href: 'https://medium.com/@algogrit',
     title: 'Medium'
   },
   {
     icon: 'fa-pencil-square',
-    href: 'https://blog.gauravagarwalr.com/',
+    href: 'https://blog.algogrit.com/',
     title: 'Blog'
   }
 ]
@@ -53,7 +53,7 @@ const AboutSection = () => (
       </h1>
       <div className="subheading mb-5">
         <p>
-          <a href="tel:+1 (408) 498-5176">+1 (408) 498-5176</a> · <a href="mailto:gauravagarwalr@gmail.com">gaurav.agarwal.r@gmail.com</a>
+          <a href="mailto:algogrit@gmail.com">algogrit@gmail.com</a>
         </p>
       </div>
       <div className="mb-5">
@@ -65,7 +65,9 @@ const AboutSection = () => (
           I am a full stack developer, willing to get his hands dirty in order to get things moving. I don't believe in working in silos. I find it comforting to understand all layers of a stack.
         </p>
 
-        <p>I am a freelance technical consultant. Hit me up and we can discuss how I can help you in bringing your next big idea to life.</p>
+        <p>
+          Currently, I am working on life's grand plans...
+        </p>
       </div>
       <ul className="list-inline list-social-icons mb-0">
         {

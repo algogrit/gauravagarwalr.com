@@ -17,7 +17,7 @@ const Layout = ({ children, data }) => (
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Resume and Portfolio' },
-        { name: 'keywords', content: 'gauravagarwalr, technical consultant, software engineer, freelance, experienced, developer, programmer, frontend, backend, full stack' },
+        { name: 'keywords', content: 'algogrit, technical consultant, software engineer, freelance, experienced, developer, programmer, frontend, backend, full stack' },
         { name: 'author', content: 'Gaurav Agarwal' },
         { name: 'google-site-verification', content: 'WIplXD9_AT1q-q7UzbwFRNsu1gOzfoJqXRHokqznM14' }
       ]}

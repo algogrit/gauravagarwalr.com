@@ -1,7 +1,7 @@
 Gaurav Agarwal's Site
 ---------------------
 
-Contains content for [my site](https://gauravagarwalr.com).
+Contains content for [my site](https://algogrit.com).
 
 Built using [Gatsby](https://www.gatsbyjs.org).
 Themed Using [StartBootstrap - Resume](https://startbootstrap.com/template-overviews/resume/) theme.

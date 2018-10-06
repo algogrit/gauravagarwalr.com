@@ -1,6 +1,4 @@
 import _ from 'lodash'
-import classNames from 'classnames'
-
 import React from 'react'
 
 import { withPrefix } from 'gatsby-link'
@@ -32,7 +30,8 @@ const SKILLS = [
       { tooltip: 'Swift' },
       { tooltip: 'Elm' },
       { tooltip: 'Elixir' },
-      { tooltip: 'Java', label: 'java-original', type: Icongram },
+      { tooltip: 'TypeScript', label: 'typescript-plain', type: Icongram },
+      { tooltip: 'Java', label: 'java-original', type: Icongram }
     ]
   },
   {

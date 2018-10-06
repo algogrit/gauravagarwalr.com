@@ -2,20 +2,27 @@ import React from 'react'
 
 const EXPERIENCE_DESCRIPTION = [
   {
-    title: 'Freelance Consultant',
+    title: 'Software Practitioner',
+    company: 'Self',
+    startDate: 'October 2018',
+    endDate: 'Present',
+    description: `Building simple solutions to solve real world challenges. Chipping away one problem at a time.`
+  },
+  {
+    title: 'Independent Consultant',
     company: 'Self',
     startDate: 'April 2018',
-    endDate: 'Present',
+    endDate: 'August 2018',
     description: `Bringing wide variety of experience across domains and stacks into building cutting-edge solutions for clients.`
   },
   {
     title: 'Lead Technical Consultant',
     company: 'Tarka Labs',
     startDate: 'December 2014',
-    endDate: 'Present',
+    endDate: 'October 2018',
     description: `Working across multiple domains from teleinformatics to mining to enterprise asset management to manufacturing.
     Leading a team of developers to deliver consistently and working closely with clients and their development teams to ensure timely delivery.
-    Working across the stack - hardware, mobile and web apps. Solving hard technical problems in a fast-changing landscape.`
+    Working across the stack - including hardware, mobile and web apps. Solving hard technical problems in a fast-changing landscape.`
   },
   {
     title: 'Software Engineer',

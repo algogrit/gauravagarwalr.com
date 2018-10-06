@@ -1,8 +1,8 @@
 {
-  "name": "gauravagarwalr",
+  "name": "algogrit",
   "description": "Gaurav Agarwal, Software Engineer",
   "version": "1.0.0",
-  "author": "Gaurav Agarwal <gaurav.agarwal.r@gmail.com>",
+  "author": "Gaurav Agarwal <algogrit@gmail.com>",
   "dependencies": {
     "bootstrap": "^4.1.0",
     "classnames": "^2.2.5",
@@ -20,7 +20,7 @@
     "startbootstrap-resume": "^4.0.0"
   },
   "keywords": [
-    "gauravagarwalr",
+    "algogrit",
     "consultant",
     "software engineer"
   ],
