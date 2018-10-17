@@ -42,6 +42,16 @@ const SOCIAL_LINKS = [
     icon: 'fa-pencil-square',
     href: 'https://blog.algogrit.com/',
     title: 'Blog'
+  },
+  {
+    icon: 'fa-twitch',
+    href: 'https://www.twitch.tv/algogrit',
+    title: 'Twitch'
+  },
+  {
+    icon: 'fa-gitlab',
+    href: 'https://gitlab.com/algogrit',
+    title: 'Gitlab'
   }
 ]
 
