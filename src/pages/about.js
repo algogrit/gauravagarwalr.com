@@ -4,9 +4,9 @@ import React from 'react'
 
 const SOCIAL_LINKS = [
   {
-    icon: 'fa-skype',
-    href: 'skype:gauravagarwalr',
-    title: 'Skype'
+    icon: 'fa-pencil-square',
+    href: 'https://blog.algogrit.com/',
+    title: 'Blog'
   },
   {
     icon: 'fa-twitter',
@@ -19,6 +19,16 @@ const SOCIAL_LINKS = [
     title: 'Linkedin'
   },
   {
+    icon: 'fa-medium',
+    href: 'https://medium.com/@algogrit',
+    title: 'Medium'
+  },
+  {
+    icon: 'fa-stack-overflow',
+    href: 'https://stackoverflow.com/users/1268651/gaurav-agarwal',
+    title: 'Stack Overflow'
+  },
+  {
     icon: 'fa-github',
     href: 'https://github.com/algogrit',
     title: 'Github'
@@ -29,19 +39,9 @@ const SOCIAL_LINKS = [
     title: 'Bitbucket'
   },
   {
-    icon: 'fa-stack-overflow',
-    href: 'https://stackoverflow.com/users/1268651/gaurav-agarwal',
-    title: 'Stack Overflow'
-  },
-  {
-    icon: 'fa-medium',
-    href: 'https://medium.com/@algogrit',
-    title: 'Medium'
-  },
-  {
-    icon: 'fa-pencil-square',
-    href: 'https://blog.algogrit.com/',
-    title: 'Blog'
+    icon: 'fa-gitlab',
+    href: 'https://gitlab.com/algogrit',
+    title: 'Gitlab'
   },
   {
     icon: 'fa-twitch',
@@ -49,10 +49,10 @@ const SOCIAL_LINKS = [
     title: 'Twitch'
   },
   {
-    icon: 'fa-gitlab',
-    href: 'https://gitlab.com/algogrit',
-    title: 'Gitlab'
-  }
+    icon: 'fa-skype',
+    href: 'skype:gauravagarwalr',
+    title: 'Skype'
+  },
 ]
 
 const AboutSection = () => (

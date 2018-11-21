@@ -4,6 +4,7 @@ import AboutSection from './about'
 import ExperienceSection from './experience'
 import EducationSection from './education'
 import SkillsSection from './skills'
+import TalksSection from './talks'
 import InterestsSection from './interests'
 
 const IndexPage = () => (
@@ -12,6 +13,7 @@ const IndexPage = () => (
     <ExperienceSection/>
     <EducationSection/>
     <SkillsSection/>
+    <TalksSection/>
     <InterestsSection/>
   </div>
 )
