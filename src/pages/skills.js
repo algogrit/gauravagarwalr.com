@@ -21,11 +21,11 @@ const SKILLS = [
     title: "Programming Languages",
     icons: [
       { tooltip: 'Ruby', filetype: 'png' },
-      { tooltip: 'JavaScript', label: 'javascript-plain', type: Icongram },
+      { tooltip: 'JavaScript', label: 'javascript-original', type: Icongram },
       { tooltip: 'Go', label: 'go-original', type: Icongram },
       { tooltip: 'Python' },
-      { tooltip: 'HTML5', label: 'html5-plain', type: Icongram },
-      { tooltip: 'CSS3', label: 'css3-plain', type: Icongram },
+      { tooltip: 'HTML5', label: 'html5-original', type: Icongram },
+      { tooltip: 'CSS3', label: 'css3-original', type: Icongram },
       { tooltip: 'Bash' },
       { tooltip: 'Swift' },
       { tooltip: 'Elm' },
@@ -37,7 +37,7 @@ const SKILLS = [
   {
     title: "Tools & Frameworks",
     icons: [
-      { tooltip: 'Rails', label: 'rails-plain', type: Icongram },
+      { tooltip: 'Rails', label: 'rails-original-wordmark', type: Icongram },
       { tooltip: 'Sinatra' },
       { tooltip: 'Phoenix' },
       { tooltip: 'Gorilla', filetype: 'png' },
@@ -57,7 +57,7 @@ const SKILLS = [
   {
     title: "Infrastructure & Database",
     icons: [
-      { tooltip: 'Postgres', label: 'postgresql-plain', type: Icongram },
+      { tooltip: 'Postgres', label: 'postgresql-original', type: Icongram },
       { tooltip: 'MySQL', label: 'mysql-plain', type: Icongram },
       { tooltip: 'Redis', label: 'redis-original', type: Icongram },
       { tooltip: 'Sqlite' },
@@ -108,10 +108,9 @@ const Skill = ({skill}) => {
 
 const WORKFLOW = [
   "Fault tolerant & resilient architecture",
-  "Micro services communicating using RESTful APIs",
+  "Distributed micro-service architecture",
   "Mobile-First, Responsive Design",
   "Cross Browser Testing & Debugging",
-  "Cross Functional Teams",
   "Agile Development & Scrum",
   "Rapid Prototyping & Early feedback",
 ]
