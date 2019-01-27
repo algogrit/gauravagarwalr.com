@@ -48,3 +48,20 @@ a:hover, a:focus, a:active {
     width: auto;
   }
 }
+
+.technologies {
+  .key-tech {
+    font-weight: 600;
+    &:after {
+      content: ": "
+    }
+  }
+  .technology {
+    &:after {
+      content: ", ";
+    }
+    &:last-child:after {
+      content: ""
+    }
+  }
+}
