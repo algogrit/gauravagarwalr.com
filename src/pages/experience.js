@@ -162,7 +162,7 @@ const Experience = ({experience}) => (
   <div className="resume-item d-flex flex-column flex-md-row mb-5">
     <div className="resume-content mr-auto">
       <h3 className="mb-0">{experience.title}</h3>
-      <div className="subheading mb-3">{experience.company}</div>
+      <div className="subheading mb-3"><a href={experience.link}>{experience.company}</a></div>
       {experience.description && <p>{experience.description}</p>}
       <Projects projects={experience.projects}/>
     </div>
