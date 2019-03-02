@@ -1,0 +1,17 @@
+# Ruby
+"My name is Gaurav Agarwal. In 2018, I founded a consulting and training company called AgarwalConsulting.io. I started working with Ruby on Rails in 2012 at ThoughtWorks and have been using it ever since. Apart from working with RoR from version 2.3 to the current version and ruby 1.8 to 2.6, having also built sinatra based applications. I have optimized RoR applications using a mix of memory and CPU profiling and have upgraded several rails applications to the then latest versions. I have taken over legacy systems having little to no test coverage with a lot of bugs and stabilized the codebase while getting the test coverage to acceptable levels."
+
+# Go
+"My name is Gaurav Agarwal. In 2018, I founded a consulting and training company called AgarwalConsulting.io. I was exposed to Go in 2014 while at BrowserStack to stress test UDP network across nodes. I have been involved in the Chennai Go community since 2015 and have been organizing meetups actively since 2018. I have built multiple services with Go and also deployed FaaS applications using Golang. I have spoken at GDG DevFest, GopherCon India 2019 and GopherCon Vietnam 2018 on the internals of Channels. I also speak regularly at local and remote meetups, apart from conducting workshops and training in Go."
+
+# JS
+"My name is Gaurav Agarwal. In 2018, I founded a consulting and training company called AgarwalConsulting.io. I started learning Node.js in 2012, by the end of the year I had deployed a map tile server to production. I have also built reverse-proxy servers for Selenium testing and several other web applications using Node.js. Having worked on JavaScript since ES5 to ES9, I have seen the language and the ecosystem around it evolve. Apart from this, I have designed and built CI/CD pipelines and taken multiple node.js apps to production."
+
+# React
+"My name is Gaurav Agarwal. In 2018, I founded a consulting and training company called AgarwalConsulting.io. I started building single page applications in 2012 usign Backbone.js and later in 2015 moved on to building SPAs using React.js. I have built interactive dashboards with 10+ socket connections updating different parts of the app using a mix of Immstruct & Immutable for storing state  and RxJS to stream updates directly to the components relying on them. I have also given talks on the mentioned approach. Apart from this, I have built applications which were visualization heavy using plain React and a few other applications using Redux - Thunk / Saga as the store. I have also built apps using Vue.js and Elm."
+
+# Swift
+"My name is Gaurav Agarwal. In 2018, I founded a consulting and training company called AgarwalConsulting.io. I started working with iOS and Swift in 2016. My first foray was into building an offline first application which talks to an IBM Maximo server via ReSTful APIs. I improved on the existing syncing mechanism and ensuring that data isn't lost when the app connects back to the network. Apart from this I designed and built the CI/CD pipelines using Quick and Nimble along with Fastlane and CircleCI."
+
+# Clojure
+"My name is Gaurav Agarwal. In 2018, I founded a consulting and training company called AgarwalConsulting.io. I started working with Clojure in 2012 - starting with small toy programs and applications. I have conducted internal workshops on Clojure while at ThoughtWorks. I have been a using functional-programming paradigms ever since I was introduced to Clojure in every language since."
