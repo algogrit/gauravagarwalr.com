@@ -47,6 +47,10 @@ a:hover, a:focus, a:active {
     height: 3rem;
     width: auto;
   }
+
+  .skill-tooltip {
+    display: none;
+  }
 }
 
 .technologies {
@@ -63,5 +67,11 @@ a:hover, a:focus, a:active {
     &:last-child:after {
       content: ""
     }
+  }
+}
+
+#talks {
+  .my-auto.print-alternative {
+    display: none;
   }
 }

@@ -55,12 +55,13 @@ const SKILLS = [
     ]
   },
   {
-    title: "Infrastructure & Database",
+    title: "Infrastructure & Data",
     icons: [
       { tooltip: 'Postgres', label: 'postgresql-original', type: Icongram },
       { tooltip: 'MySQL', label: 'mysql-plain', type: Icongram },
       { tooltip: 'Redis', label: 'redis-original', type: Icongram },
       { tooltip: 'Sqlite' },
+      { tooltip: 'Apache Beam', filetype: 'png' },
       { tooltip: 'Docker', label: 'docker-original', type: Icongram },
       { tooltip: 'Kubernetes' },
       { tooltip: 'Nginx', label: 'nginx-original', type: Icongram },
@@ -94,6 +95,7 @@ const Skill = ({skill}) => {
     return (
       <li className="list-inline-item" key={label}>
         <IconTag label={label} tooltip={icon.tooltip} filetype={icon.filetype}/>
+        <span className="skill-tooltip">{icon.tooltip}</span>
       </li>
     )
   })

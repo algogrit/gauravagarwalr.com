@@ -11,6 +11,15 @@ const EXPERIENCE_DESCRIPTION = [
     description: `Technical consulting for clients across the world & corporate training - Go, React.js, Ruby on Rails, GraphQL, Javascript, Python, IoT.`,
     projects: [
       {
+        title: 'Digisense, Autosense',
+        description: 'Building a data processing pipeline to ingest 10K packets/s from Pubsub into Google BigQuery and Google BigTable. Designed and architected the pipeline on GCP using Dataflow, which is built on top of Apache Beam.',
+        technologies: ["Java", "Apache Beam", "Cloud DataFlow", "Google BigQuery", "Google BigTable", "Gson", "Google Pubsub"]
+      },
+      {
+        title: 'Trainings',
+        description: 'Delivered world-class training on Go, Docker and Kubernetes for multiple clients across India.'
+      },
+      {
         title: 'Products',
         description: 'Building SaaS products in the space of near-realtime monitoring, data ingestion and content publishing.'
       }

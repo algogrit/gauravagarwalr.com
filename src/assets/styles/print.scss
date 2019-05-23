@@ -1,2 +1,64 @@
 @media print {
+  section.resume-section {
+    border-bottom: none;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+
+    .subheading a {
+      text-decoration: none;
+    }
+
+    page-break-after: always;
+
+    &:last-child, &:first-child {
+      page-break-after: auto;
+    }
+
+    &#about {
+      .list-social-icons {
+        display: none !important;
+      }
+    }
+
+    &#experience {
+      .resume-item {
+        page-break-inside: avoid;
+      }
+    }
+
+    &#skills {
+      .list-icons {
+        font-size: 1rem;
+
+        .list-inline-item {
+          img {
+            display: none;
+          }
+
+          .skill-tooltip {
+            display: inline-block;
+          }
+
+          &:after {
+            content: ", ";
+          }
+
+          &:last-child:after {
+            content: "";
+          }
+
+        }
+      }
+    }
+
+    &#talks {
+      .my-auto {
+        display: none;
+
+        &.print-alternative {
+          display: block;
+        }
+      }
+    }
+  }
 }
