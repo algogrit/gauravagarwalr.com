@@ -68,7 +68,7 @@ const AboutSection = () => (
       </div>
       <div className="mb-0">
         <p>
-          I am a generalist software engineer who has worked across the stack and is equally comfortable with managing and keeping services up and running, as well as creating beautiful 2D and 3D visualizations.
+          I am a generalist software engineer who has worked across the stack and is equally comfortable with scaling up services as well as creating beautiful 2D and 3D visualizations.
         </p>
 
         <p>
