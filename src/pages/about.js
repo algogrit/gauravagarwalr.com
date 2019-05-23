@@ -83,7 +83,7 @@ const AboutSection = () => (
         {
           SOCIAL_LINKS.map((socialLink) => {
             return (
-              <li className="list-inline-item">
+              <li className="list-inline-item" key={socialLink.icon}>
                 <a href={socialLink.href} target="_blank">
                   <span className="fa-stack fa-lg">
                     <i className="fa fa-circle fa-stack-2x"></i>

@@ -92,7 +92,7 @@ const Skill = ({skill}) => {
     let label = icon.label || _.kebabCase(icon.tooltip)
 
     return (
-      <li className="list-inline-item">
+      <li className="list-inline-item" key={label}>
         <IconTag label={label} tooltip={icon.tooltip} filetype={icon.filetype}/>
       </li>
     )
@@ -125,8 +125,8 @@ const SkillsSection = () => (
         <div className="subheading mb-3">Workflow</div>
         <ul className="fa-ul mb-0">
           {
-            WORKFLOW.map((item) => (
-              <li>
+            WORKFLOW.map((item, index) => (
+              <li key={index}>
                 <i className="fa-li fa fa-check"></i>
                 {item}
               </li>

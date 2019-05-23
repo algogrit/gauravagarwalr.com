@@ -10,6 +10,7 @@ import 'startbootstrap-resume/css/resume.css'
 import 'font-awesome/css/font-awesome.css'
 
 import '../../src/assets/styles/index.scss'
+import '../../src/assets/styles/print.scss'
 
 const Layout = ({ children, data }) => (
   <div id="page-top">

@@ -28,7 +28,7 @@ const EducationSection = () => (
       {
         EDUCATION.map((education) => {
           return (
-            <div className="resume-item d-flex flex-column flex-md-row mb-5">
+            <div className="resume-item d-flex flex-column flex-md-row mb-5" key={education.institution}>
               <div className="resume-content mr-auto">
                 <h3 className="mb-0">{education.institution}</h3>
                 <div className="subheading mb-3">{education.course}</div>
