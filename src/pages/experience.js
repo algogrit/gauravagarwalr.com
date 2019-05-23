@@ -16,6 +16,11 @@ const EXPERIENCE_DESCRIPTION = [
         technologies: ["Java", "Apache Beam", "Cloud DataFlow", "Google BigQuery", "Google BigTable", "Gson", "Google Pubsub"]
       },
       {
+        title: 'Oshi',
+        description: 'Building a world-class react app to help patients record their own health metrics and keep a track of their diets and routine. Designed, built and iterated over several features of the app',
+        technologies: ["React", "Redux", "Cordova", "SVG"]
+      },
+      {
         title: 'Trainings',
         description: 'Delivered world-class training on Go, Docker and Kubernetes for multiple clients across India.'
       },
