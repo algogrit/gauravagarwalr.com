@@ -15,3 +15,6 @@
 
 # Clojure
 "My name is Gaurav Agarwal. In 2018, I founded a consulting and training company called AgarwalConsulting.io. I started working with Clojure in 2012 - starting with small toy programs and applications. I have conducted internal workshops on Clojure while at ThoughtWorks. I have been a using functional-programming paradigms ever since I was introduced to Clojure in every language since."
+
+# DevOps/SRE
+
