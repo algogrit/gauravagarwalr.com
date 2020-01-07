@@ -1,5 +1,9 @@
 # About Me
 
+## Generic
+
+"My name is Gaurav Agarwal. In 2018, I founded a consulting and training company called AgarwalConsulting.io. I started my career as a Software Engineer in 2012 working in e-commerce and have since worked in various domains including Insurance telematics, Healthcare, Manufacturing, Finance, Content Management & HRIS systems. From on-premise to cloud; From building backend, frontend, middleware and SRE to optimizing applications across the stack I have played a role in all. Since the beginning of 2019, I have been training clients on their needs of Go, Ruby, Java, Python, Docker & Kubernetes."
+
 ## Ruby
 
 "My name is Gaurav Agarwal. In 2018, I founded a consulting and training company called AgarwalConsulting.io. I have worked extensively with Ruby on Rails starting in 2012 at ThoughtWorks. Apart from working with RoR from version 2.3 to the current version 6.0 and ruby 1.8 to 2.6, I have also built sinatra based applications. I have optimized RoR applications using a mix of memory and CPU profiling and have upgraded several rails applications to the then latest versions. I have taken over legacy systems having little to no test coverage with a lot of bugs and stabilized the codebase while getting the test coverage to acceptable levels."
