@@ -70,7 +70,7 @@ const SKILLS = [
       { tooltip: 'CircleCI', label: 'circleci' },
       { tooltip: 'Jenkins', filetype: 'png' },
       { tooltip: 'Terraform', filetype: 'png' },
-      { tooltip: 'Elastic Search', filetype: 'png' },
+      { tooltip: 'Elasticsearch', filetype: 'png' },
       { tooltip: 'Fluentd', filetype: 'png' },
       { tooltip: 'Kibana', filetype: 'png' },
     ]
