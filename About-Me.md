@@ -30,7 +30,7 @@
 
 ## DevOps/SRE
 
-"My name is Gaurav Agarwal. In 2018, I founded a consulting and training company called AgarwalConsulting.io. From, configuring servers for deployment using capistrano (Ruby) to setting up infrastructure in the cloud using Terraform and orchestrating containers using Kubernetes, I have done everything in the middle too. Seen the rise and fall of chef & puppet tools, to the rise of ansible. I am proficient in bash and many of the UNIX toolchain. I have implemented best practices of CI/CD in web based applications (Jenkins/CircleCI) as well as mobile applications using Fastlane. Making the entire infrastructure obeservable and easily understandable is key to a teams success."
+"My name is Gaurav Agarwal. In 2018, I founded a consulting and training company called AgarwalConsulting.io. From, configuring servers for deployment using capistrano (Ruby) to setting up infrastructure in the cloud using Terraform and orchestrating containers using Kubernetes, I have done everything in the middle too. Seen the rise and fall of chef & puppet tools, to the rise of ansible. I am proficient in bash and many of the UNIX toolchain. I have implemented best practices of CI/CD in web based applications (Jenkins/CircleCI) as well as mobile applications using Fastlane. Making the entire infrastructure observable and easily understandable is key to a teams success."
 
 ## Python
 
