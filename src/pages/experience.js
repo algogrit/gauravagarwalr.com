@@ -8,7 +8,7 @@ const EXPERIENCE_DESCRIPTION = [
     link: 'https://agarwalconsulting.io/',
     startDate: 'April 2018',
     endDate: 'Present',
-    description: `Technical consulting for clients across the world & corporate training - Go, React.js, Ruby on Rails, GraphQL, Javascript, Python, IoT.`,
+    description: `Technical consulting for clients across the world & corporate training - Go, Java, React, Ruby, GraphQL, Javascript, Python, IoT, Swift`,
     projects: [
       {
         title: 'Roll',
@@ -28,7 +28,7 @@ const EXPERIENCE_DESCRIPTION = [
       },
       {
         title: 'Trainings',
-        description: 'Delivered world-class training on Go, Docker, Kubernetes, Ruby, Python & Java for multiple clients across India.'
+        description: 'Delivered world-class training on Go, Docker, Kubernetes, Ruby, Python & Java for multiple clients across India, US & Singapore.'
       },
       {
         title: 'Products',
