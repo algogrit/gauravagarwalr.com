@@ -1,14 +1,18 @@
 @media print {
-  a {
-    text-decoration: none;
-  }
-
   section.resume-section {
     border-bottom: none;
     padding-bottom: 0px !important;
     padding-top: 0px !important;
 
     page-break-after: always;
+
+    .subheading a {
+      text-decoration: none;
+    }
+
+    .project a {
+      text-decoration: none;
+    }
 
     &:last-child, &:first-child {
       page-break-after: auto;
