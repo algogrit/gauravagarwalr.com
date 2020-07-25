@@ -11,6 +11,11 @@ const EXPERIENCE_DESCRIPTION = [
     description: `Technical consulting for clients across the world & corporate training - Go, React.js, Ruby on Rails, GraphQL, Javascript, Python, IoT.`,
     projects: [
       {
+        title: 'Roll (tryroll.com)',
+        description: 'Member of the core technical team. Lead the re-architecture of infrastructure and moving away from Heroku to AWS. Re-designed the existing application to be cloud-native running on EKS. Setting up monitoring systems using EFK stack. Building and deploying new features. Integrating an oauth 2 server implementation to allow third-party developers to interact and build on top of our backend APIs.',
+        technologies: ["Go", "Kubernetes", "Helm", "RDS", "Terraform", "Elastic Search", "AWS", "ORY Hydra"]
+      },
+      {
         title: 'Digisense, Autosense',
         description: 'Building a data processing pipeline to ingest 10K packets/s from Pubsub into Google BigQuery and Google BigTable. Designed and architected the pipeline on GCP using Dataflow, which is built on top of Apache Beam.',
         technologies: ["Java", "Apache Beam", "Cloud DataFlow", "Google BigQuery", "Google BigTable", "Gson", "Google Pubsub"]
@@ -22,7 +27,7 @@ const EXPERIENCE_DESCRIPTION = [
       },
       {
         title: 'Trainings',
-        description: 'Delivered world-class training on Go, Docker and Kubernetes for multiple clients across India.'
+        description: 'Delivered world-class training on Go, Docker, Kubernetes, Ruby, Python & Java for multiple clients across India.'
       },
       {
         title: 'Products',
