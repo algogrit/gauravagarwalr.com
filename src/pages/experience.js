@@ -14,7 +14,7 @@ const EXPERIENCE_DESCRIPTION = [
         title: 'Roll',
         link: "https://tryroll.com",
         description: 'Member of the core technical team. Lead the re-architecture of infrastructure and moving away from Heroku to AWS. Re-designed the existing application to be cloud-native running on AWS managed Kubernetes service. Setting up monitoring systems using EFK stack. Building and deploying new features. Integrating an oauth 2 server implementation to allow third-party developers to interact and build on top of our backend APIs.',
-        technologies: ["Go", "Kubernetes", "Helm", "RDS", "Terraform", "Elastic Search", "AWS", "ORY Hydra", "CircleCI"]
+        technologies: ["Go", "Kubernetes", "Helm", "RDS", "Terraform", "Elastic Search", "AWS", "ORY Hydra", "CircleCI", "Twilio"]
       },
       {
         title: 'Digisense, Autosense',
