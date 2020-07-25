@@ -1,5 +1,4 @@
-Gaurav Agarwal's Site
----------------------
+# algogrit.com
 
 Contains content for [my site](https://algogrit.com).
 

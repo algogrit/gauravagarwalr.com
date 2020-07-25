@@ -11,9 +11,10 @@ const EXPERIENCE_DESCRIPTION = [
     description: `Technical consulting for clients across the world & corporate training - Go, React.js, Ruby on Rails, GraphQL, Javascript, Python, IoT.`,
     projects: [
       {
-        title: 'Roll (tryroll.com)',
-        description: 'Member of the core technical team. Lead the re-architecture of infrastructure and moving away from Heroku to AWS. Re-designed the existing application to be cloud-native running on EKS. Setting up monitoring systems using EFK stack. Building and deploying new features. Integrating an oauth 2 server implementation to allow third-party developers to interact and build on top of our backend APIs.',
-        technologies: ["Go", "Kubernetes", "Helm", "RDS", "Terraform", "Elastic Search", "AWS", "ORY Hydra"]
+        title: 'Roll',
+        link: "https://tryroll.com",
+        description: 'Member of the core technical team. Lead the re-architecture of infrastructure and moving away from Heroku to AWS. Re-designed the existing application to be cloud-native running on AWS managed Kubernetes service. Setting up monitoring systems using EFK stack. Building and deploying new features. Integrating an oauth 2 server implementation to allow third-party developers to interact and build on top of our backend APIs.',
+        technologies: ["Go", "Kubernetes", "Helm", "RDS", "Terraform", "Elastic Search", "AWS", "ORY Hydra", "CircleCI"]
       },
       {
         title: 'Digisense, Autosense',
@@ -156,14 +157,24 @@ const Technologies = ({technologies}) => {
   )
 }
 
-const Project = ({project}) => (
-  <div className="project">
-    <h5>{project.title}</h5>
-    <div className="project-description">{project.description}</div>
-    <Technologies technologies={project.technologies}/>
-    <br/>
-  </div>
-)
+const Project = ({project}) => {
+  var header;
+
+  if(_.isEmpty(project.link)) {
+    header = <h5>{project.title}</h5>
+  } else {
+    header = <h5><a href={project.link}>{project.title}</a></h5>
+  }
+
+  return (
+    <div className="project">
+      {header}
+      <div className="project-description">{project.description}</div>
+      <Technologies technologies={project.technologies}/>
+      <br/>
+    </div>
+  )
+}
 
 const Projects = ({projects}) => {
   if(_.isEmpty(projects)) return null;
