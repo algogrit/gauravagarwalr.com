@@ -3,6 +3,35 @@ import React from 'react'
 
 const EXPERIENCE_DESCRIPTION = [
   {
+    title: 'Director of Engineering',
+    company: 'CoderMana Technologies Pvt Ltd',
+    link: 'https://codermana.com/',
+    startDate: 'August 2020',
+    endDate: 'Present',
+    description: `Technical consulting for clients across the world & corporate training - Go, Java, React, Ruby, GraphQL, Javascript, Python, IoT, Swift`,
+    projects: [
+      {
+        title: 'Roll',
+        link: "https://tryroll.com",
+        description: 'Member of the core technical team. Led the backend team. Worked closely with stake holders to build and deploy new features. Performance optimizations at the DB and backend level.',
+        technologies: ["Go", "Kubernetes", "Helm", "RDS", "Terraform", "Elastic Search", "AWS", "ORY Hydra", "CircleCI", "Twilio"]
+      },
+      {
+        title: 'CB App, MantaSolutions',
+        description: 'Building graphQL based APIs to power the frontend. Working closely with stakeholders for feature development. Managing and transforming the team to a agile process.',
+        technologies: ["Go", "GraphQL", "Apollo.js", "Postgres"]
+      },
+      {
+        title: 'Trainings',
+        description: 'Delivered world-class training on Go, Docker, Kubernetes, Ruby, Python & Java for multiple clients across India, US & Singapore.'
+      },
+      {
+        title: 'Products',
+        description: 'Building SaaS products in the space of near-realtime monitoring, data ingestion and content publishing.'
+      }
+    ]
+  },
+  {
     title: 'Founder & Principal Consultant',
     company: 'Agarwal Consulting',
     link: 'https://agarwalconsulting.io/',
@@ -18,7 +47,7 @@ const EXPERIENCE_DESCRIPTION = [
       },
       {
         title: 'Digisense, Autosense',
-        description: 'Building a data processing pipeline to ingest 10K packets/s from Pubsub into Google BigQuery and Google BigTable. Designed and architected the pipeline on GCP using Dataflow, which is built on top of Apache Beam.',
+        description: 'Building a data processing pipeline to ingest 10K packets/s from Pubsub into Google BigQuery and Google BigTable. Designed and architected the pipeline on GCP using Dataflow, which is built on top of Apache Beam. Designing the codebase easy to configure and scale.',
         technologies: ["Java", "Apache Beam", "Cloud DataFlow", "Google BigQuery", "Google BigTable", "Gson", "Google Pubsub"]
       },
       {
@@ -29,10 +58,6 @@ const EXPERIENCE_DESCRIPTION = [
       {
         title: 'Trainings',
         description: 'Delivered world-class training on Go, Docker, Kubernetes, Ruby, Python & Java for multiple clients across India, US & Singapore.'
-      },
-      {
-        title: 'Products',
-        description: 'Building SaaS products in the space of near-realtime monitoring, data ingestion and content publishing.'
       }
     ]
   },
@@ -47,12 +72,12 @@ const EXPERIENCE_DESCRIPTION = [
     projects: [
       {
         title: 'HRIS, Auzmor',
-        description: `Leading a team of developers. Building entire backend using Ruby on Rails and frontend using React.js, deployed on GCP using Docker containers on Kubernetes cluster.`,
-        technologies: ["Ruby on Rails", "React.js", "Redux", "GCP", "Kubernetes"]
+        description: `Mentoring and leading a team on TypeScript/React. Designing the Web app from the ground up to be bug-free and scalable code-wise. Building entire backend using Ruby on Rails. Architecting deployment on GCP using Docker containers onto a Kubernetes cluster.`,
+        technologies: ["Ruby on Rails", "React.js", "Redux", "GCP", "Kubernetes", "Docker"]
       },
       {
         title: 'Datacloud',
-        description: `Worked with OpenCV to do image stitching. Creating, running and managing containers using Docker on Azure instances. Designed and built apps using Vue.js and 3D visualisations using VTK.js. Built ReSTful APIs using Go programming language.`,
+        description: `Using OpenCV to stitch images taken inside of a mine. Consuming sensor data and visualizing the regions where the ores are concentrated. Creating, running and managing containers using Docker on Azure instances. Designed and built apps using Vue.js and 3D visualisations using VTK.js. Built ReSTful APIs using Go programming language.`,
         technologies: ["Vue.js", "Docker", "Azure", "Go", "OpenCV", "Python", "ClickHouse", "VTK.js", "Sinatra", "Redis"]
       },
       {
