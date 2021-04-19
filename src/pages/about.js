@@ -76,7 +76,7 @@ const AboutSection = () => (
         </p>
 
         <p>
-          Currently, I am working on life's grand plans...
+          I have worked closely with stakeholders for building scalable solutions while managing teams of developers.
         </p>
       </div>
       <ul className="list-inline list-social-icons mb-0">
