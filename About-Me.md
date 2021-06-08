@@ -35,3 +35,7 @@
 ## Python
 
 "My name is Gaurav Agarwal. In 2018, I founded a consulting and training company called AgarwalConsulting.io. I started working with python version 2.6 and have used python to interface with complex Raspberry Pi based projects as well as develop and deploy OpenCV based image recognition software. I was recently involved in creating Django based learning content for an Edtech startup based out of Bengaluru. Apart from being involved in the Chennai Python community, I mentor people on Python and lead workshops on it."
+
+## Cloud
+
+"My name is Gaurav Agarwal. In 2018, I founded a consulting and training company called CoderMana Technologies Pvt Ltd. I started with multiple clouds, starting with AWS in 2013 and have since worked with GCP and Azure as well. I have deployed FaaS applications and have designed data intensive applications using DataFlow, BigQuery and BigTable which were capable of ingesting at least 1L packets/second. From moving ML based workloads to cloud to building micro-services based cloud-native cluster, I have done it all."
