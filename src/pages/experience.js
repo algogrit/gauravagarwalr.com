@@ -8,13 +8,13 @@ const EXPERIENCE_DESCRIPTION = [
     link: 'https://codermana.com/',
     startDate: 'August 2020',
     endDate: 'Present',
-    description: `Technical consulting for clients across the world & corporate training - Go, Java, React, Ruby, GraphQL, Javascript, Python, IoT, Swift`,
+    description: `Technical consulting for clients across the world & corporate training - Go, Rust, Cloud, C++, Java, React, Ruby, GraphQL, Javascript, Python, IoT, Swift, Kubernetes, IaC`,
     projects: [
       {
         title: 'Roll',
         link: "https://tryroll.com",
-        description: 'Member of the core technical team. Led the backend team. Worked closely with stake holders to build and deploy new features. Performance optimizations at the DB and backend level.',
-        technologies: ["Go", "Kubernetes", "Helm", "RDS", "Terraform", "Elastic Search", "AWS", "ORY Hydra", "CircleCI", "Twilio"]
+        description: 'Member of the core technical team. Led the backend and SRE team. Worked closely with stake holders to build and deploy new features. Performance optimizations at the DB and backend level on existing and new code being built. Moved from a manually managed infra to a IaC based solution while meeting SLAs to reduce downtime.',
+        technologies: ["Go", "Kubernetes", "Helm", "RDS", "Terraform", "ElasticSearch", "DataDog", "Vault", "AWS", "ORY Hydra", "CircleCI", "GitHub Actions", "Twilio", "OIDC"]
       },
       {
         title: 'CB App, MantaSolutions',
@@ -23,7 +23,7 @@ const EXPERIENCE_DESCRIPTION = [
       },
       {
         title: 'Trainings',
-        description: 'Delivered world-class training on Go, Docker, Kubernetes, Ruby, Python & Java for multiple clients across India, US & Singapore.'
+        description: 'Delivered world-class training on Go, Rust, C++, Docker, Kubernetes, Terraform, Cloud - AWS, GCP & Azure, Ruby, Python, Java, Cilium, and more for multiple clients all over Asia, America, Europe, Africa & Australia.'
       },
       {
         title: 'Products',
