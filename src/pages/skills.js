@@ -20,16 +20,18 @@ const SKILLS = [
   {
     title: "Programming Languages",
     icons: [
-      { tooltip: 'Ruby', filetype: 'png' },
-      { tooltip: 'JavaScript', label: 'javascript-original', type: Icongram },
       { tooltip: 'Go', label: 'go-original', type: Icongram },
+      { tooltip: 'Rust' },
+      { tooltip: 'Elixir' },
+      { tooltip: 'Ruby', filetype: 'png' },
+      { tooltip: 'Erlang', label: 'erlang-original', type: Icongram },
+      { tooltip: 'JavaScript', label: 'javascript-original', type: Icongram },
       { tooltip: 'Python' },
       { tooltip: 'HTML5', label: 'html5-original', type: Icongram },
       { tooltip: 'CSS3', label: 'css3-original', type: Icongram },
       { tooltip: 'Bash' },
       { tooltip: 'Swift' },
       { tooltip: 'Elm' },
-      { tooltip: 'Elixir' },
       { tooltip: 'TypeScript', label: 'typescript-plain', type: Icongram },
       { tooltip: 'Java', label: 'java-original', type: Icongram }
     ]
@@ -37,10 +39,10 @@ const SKILLS = [
   {
     title: "Tools & Frameworks",
     icons: [
+      { tooltip: 'Gorilla', filetype: 'png' },
       { tooltip: 'Rails', label: 'rails-original-wordmark', type: Icongram },
       { tooltip: 'Sinatra' },
       { tooltip: 'Phoenix' },
-      { tooltip: 'Gorilla', filetype: 'png' },
       { tooltip: 'React', label: 'react-original', type: Icongram },
       { tooltip: 'Vue' },
       { tooltip: 'Lodash' },
@@ -57,6 +59,7 @@ const SKILLS = [
   {
     title: "Infrastructure & Data",
     icons: [
+      { tooltip: 'Kafka' },
       { tooltip: 'Postgres', label: 'postgresql-original', type: Icongram },
       { tooltip: 'MySQL', label: 'mysql-plain', type: Icongram },
       { tooltip: 'Redis', label: 'redis-original', type: Icongram },
@@ -85,6 +88,7 @@ const SKILLS = [
       { tooltip: 'iOS', label: 'apple-original', type: Icongram },
       { tooltip: 'AWS', label: 'amazonwebservices-original', type: Icongram },
       { tooltip: 'Google Cloud Platform' },
+      { tooltip: 'Azure' },
       { tooltip: 'Heroku', label: 'heroku-plain', type: Icongram },
       { tooltip: 'Digital Ocean' },
     ]

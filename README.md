@@ -8,9 +8,13 @@ Hosted on [Netlify](http://netlify.com/)
 
 ## Dev
 
-    $ npm install
-    $ npm run develop
+Make sure you have the correct python version installed (`.python-version`).
 
-    $ npm run build # To build locally
+```bash
+npm install
+npm run develop
+
+npm run build # To build locally
+```
 
 Simply push to release.
