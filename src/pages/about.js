@@ -9,11 +9,6 @@ const SOCIAL_LINKS = [
     title: 'Blog'
   },
   {
-    icon: 'fa-twitter',
-    href: 'https://twitter.com/algogrit',
-    title: 'Twitter'
-  },
-  {
     icon: 'fa-linkedin',
     href: 'https://www.linkedin.com/in/algogrit',
     title: 'Linkedin'
