@@ -39,3 +39,7 @@
 ## Cloud
 
 "My name is Gaurav Agarwal. In 2018, I founded a consulting and training company called CoderMana Technologies Pvt Ltd. I started with multiple clouds, starting with AWS in 2013 and have since worked with GCP and Azure as well. I have deployed FaaS applications and have designed data intensive applications using DataFlow, BigQuery and BigTable which were capable of ingesting at least 1L packets/second. From moving ML based workloads to cloud to building micro-services based cloud-native cluster, I have done it all."
+
+## Functional/Reactive Programming
+
+"My name is Gaurav Agarwal. In 2018, I founded a consulting and training company called CoderMana Technologies Pvt Ltd. I started my career as a Software Engineer in 2012 working in e-commerce and have since worked in various domains including Insurance telematics, Healthcare, Manufacturing, Finance, Content Management & HRIS systems. From on-premise to cloud; From building backend, frontend, middleware and SRE to optimizing applications across the stack I have played a role in all. I have worked with various functional/reactive programming languages like Clojure, Elm, Elixir, Erlang, F#, and Rx like libraries over the course of my career. Since the beginning of 2019, I have been training clients on their needs of Go, Ruby, Java, Python, Docker & Kubernetes. "

@@ -23,7 +23,7 @@ const EXPERIENCE_DESCRIPTION = [
       },
       {
         title: 'Trainings',
-        description: 'Delivered world-class training on Go, Rust, C++, Docker, Kubernetes, Terraform, Cloud - AWS, GCP & Azure, Ruby, Python, Java, Cilium, and more for multiple clients all over Asia, America, Europe, Africa & Australia.'
+        description: 'Delivered world-class training on Go, Rust, Elixir, C++, Data Engineering, Distributed Systems Design, Docker, Kubernetes, Terraform, Cloud - AWS, GCP & Azure, Ruby, Python, Java, Cilium, and more for multiple clients all over Asia, America, Europe, Africa & Australia.'
       },
       {
         title: 'Products',
