@@ -1,69 +1,58 @@
-# Welcome to your Lovable project
 
-## Project info
+# Professional Resume Website
 
-**URL**: https://lovable.dev/projects/9febe4ba-f2d6-479d-bc06-605a9ea20f00
+This project is an elegant and minimalist resume website built with React, Vite, and Tailwind CSS. It showcases a developer's professional experience, skills, and portfolio with a clean, modern design inspired by Apple's design principles.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- Responsive design that works on all devices
+- Elegant animations and transitions for a premium user experience
+- Modular components for different resume sections
+- Contact form with validation
+- Smooth scrolling navigation
+- Accessibility features
+- Performance optimized
 
-**Use Lovable**
+## Sections
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9febe4ba-f2d6-479d-bc06-605a9ea20f00) and start prompting.
+- Hero section with brief introduction
+- About section with professional summary
+- Experience timeline showcasing work history
+- Skills section with visual indicators
+- Education and certifications
+- Contact form and information
 
-Changes made via Lovable will be committed automatically to this repo.
+## Technologies Used
 
-**Use your preferred IDE**
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide icons
+- shadcn/ui components
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# Install dependencies
+npm install
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Run the development server
 npm run dev
+
+# Build for production
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+## Customization
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+To customize this resume for your own use:
 
-**Use GitHub Codespaces**
+1. Update the personal information in each component
+2. Replace the placeholder image in the About component
+3. Modify the experience, education, and skills data to match your background
+4. Update contact information and social links
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## License
 
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/9febe4ba-f2d6-479d-bc06-605a9ea20f00) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+This project is open source and available under the MIT License.
