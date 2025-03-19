@@ -12,7 +12,12 @@ const About = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate-in');
+            const target = entry.target as HTMLElement;
+            const animatedElements = target.querySelectorAll('.should-animate');
+            
+            animatedElements.forEach(element => {
+              element.classList.add('is-visible');
+            });
           }
         });
       },
@@ -35,16 +40,16 @@ const About = () => {
     <section id="about" ref={sectionRef} className="py-24 sm:py-32 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl opacity-0 animate-fade-up" 
-              style={{ animationDelay: '100ms', animationFillMode: 'forwards', animationDuration: '1s' }}>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl should-animate animate-fade-up" 
+              style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
             About Me
           </h2>
           <div className="mt-2 h-1 w-20 bg-primary/20 mx-auto rounded-full"></div>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="order-2 lg:order-1 opacity-0 animate-fade-right" 
-               style={{ animationDelay: '300ms', animationFillMode: 'forwards', animationDuration: '1s' }}>
+          <div className="order-2 lg:order-1 should-animate animate-fade-right" 
+               style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}>
             <div className="space-y-6">
               <div className="flex flex-wrap gap-2 mb-8">
                 <Badge variant="secondary" className="text-sm">Problem Solver</Badge>
@@ -86,8 +91,8 @@ const About = () => {
             </div>
           </div>
           
-          <div className="order-1 lg:order-2 opacity-0 animate-fade-left" 
-               style={{ animationDelay: '500ms', animationFillMode: 'forwards', animationDuration: '1s' }}>
+          <div className="order-1 lg:order-2 should-animate animate-fade-left" 
+               style={{ animationDelay: '500ms', animationFillMode: 'forwards' }}>
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl blur-xl opacity-70"></div>
               <div className="relative overflow-hidden rounded-2xl border">

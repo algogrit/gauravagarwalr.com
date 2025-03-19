@@ -1,3 +1,4 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -57,13 +58,29 @@
 }
 
 .animate-fade-up {
+  opacity: 0;
   animation: fadeIn 1s ease forwards;
 }
 
 .animate-fade-right {
+  opacity: 0;
   animation: fadeIn 1s ease forwards;
 }
 
 .animate-fade-left {
+  opacity: 0;
   animation: fadeIn 1s ease forwards;
+}
+
+/* Make animations trigger only when visible class is added */
+.should-animate {
+  opacity: 0;
+}
+
+.should-animate.is-visible {
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
