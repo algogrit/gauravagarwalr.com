@@ -20,6 +20,16 @@ const Header = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  const handleResumeDownload = () => {
+    // Create a link to the resume file and trigger download
+    const link = document.createElement('a');
+    link.href = '/john-doe-resume.pdf';
+    link.download = 'john-doe-resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const navLinks = [
     { name: 'About', href: '#about' },
     { name: 'Experience', href: '#experience' },
@@ -75,6 +85,7 @@ const Header = () => {
               size="sm"
               className="ml-4 animate-fade-down opacity-0"
               style={{ animationDelay: `${navLinks.length * 50}ms`, animationFillMode: 'forwards' }}
+              onClick={handleResumeDownload}
             >
               <Download size={16} className="mr-2" />
               Resume
@@ -102,7 +113,14 @@ const Header = () => {
                 {link.name}
               </a>
             ))}
-            <Button variant="outline" className="mt-4" onClick={() => setIsMenuOpen(false)}>
+            <Button 
+              variant="outline" 
+              className="mt-4" 
+              onClick={() => {
+                setIsMenuOpen(false);
+                handleResumeDownload();
+              }}
+            >
               <Download size={16} className="mr-2" />
               Download Resume
             </Button>
