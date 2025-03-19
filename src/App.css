@@ -40,3 +40,30 @@
 .read-the-docs {
   color: #888;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+.animate-fade-up {
+  animation: fadeIn 1s ease forwards;
+}
+
+.animate-fade-right {
+  animation: fadeIn 1s ease forwards;
+}
+
+.animate-fade-left {
+  animation: fadeIn 1s ease forwards;
+}
