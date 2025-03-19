@@ -1,16 +1,17 @@
 
 import React, { useEffect, useRef } from 'react';
-import { Progress } from '@/components/ui/progress';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Monitor, Server, Database, Wrench } from 'lucide-react';
+import { Monitor, Server, Database, Wrench, Code, 
+         FileCode, Terminal, Laptop } from 'lucide-react';
 
 type SkillCategory = {
   name: string;
   icon: React.ReactNode;
   skills: {
     name: string;
-    level: number;
+    icon: React.ReactNode;
+    description: string;
   }[];
 };
 
@@ -19,48 +20,144 @@ const skillCategories: SkillCategory[] = [
     name: "Frontend",
     icon: <Monitor className="h-5 w-5" />,
     skills: [
-      { name: "HTML/CSS", level: 95 },
-      { name: "JavaScript", level: 90 },
-      { name: "React", level: 92 },
-      { name: "TypeScript", level: 85 },
-      { name: "Tailwind CSS", level: 88 },
-      { name: "Next.js", level: 82 }
+      { 
+        name: "HTML/CSS", 
+        icon: <Code className="h-10 w-10 text-orange-500" />, 
+        description: "Semantic markup and modern CSS techniques"
+      },
+      { 
+        name: "JavaScript", 
+        icon: <FileCode className="h-10 w-10 text-yellow-500" />, 
+        description: "ES6+, DOM manipulation, and async programming"
+      },
+      { 
+        name: "React", 
+        icon: <Code className="h-10 w-10 text-blue-500" />, 
+        description: "Component architecture and state management"
+      },
+      { 
+        name: "TypeScript", 
+        icon: <FileCode className="h-10 w-10 text-blue-700" />, 
+        description: "Type-safe code for robust applications"
+      },
+      { 
+        name: "Tailwind CSS", 
+        icon: <Code className="h-10 w-10 text-teal-500" />, 
+        description: "Utility-first CSS framework"
+      },
+      { 
+        name: "Next.js", 
+        icon: <Laptop className="h-10 w-10 text-black dark:text-white" />, 
+        description: "React framework for production"
+      }
     ]
   },
   {
     name: "Backend",
     icon: <Server className="h-5 w-5" />,
     skills: [
-      { name: "Node.js", level: 88 },
-      { name: "Express", level: 85 },
-      { name: "Python", level: 78 },
-      { name: "GraphQL", level: 82 },
-      { name: "REST API Design", level: 90 },
-      { name: "Microservices", level: 75 }
+      { 
+        name: "Node.js", 
+        icon: <Server className="h-10 w-10 text-green-600" />, 
+        description: "JavaScript runtime for server-side applications"
+      },
+      { 
+        name: "Express", 
+        icon: <Server className="h-10 w-10 text-gray-600" />, 
+        description: "Web framework for Node.js"
+      },
+      { 
+        name: "Python", 
+        icon: <FileCode className="h-10 w-10 text-yellow-600" />, 
+        description: "Versatile language for backend development"
+      },
+      { 
+        name: "GraphQL", 
+        icon: <Code className="h-10 w-10 text-pink-600" />, 
+        description: "Query language for APIs"
+      },
+      { 
+        name: "REST API", 
+        icon: <Server className="h-10 w-10 text-blue-600" />, 
+        description: "Design and implementation of RESTful services"
+      },
+      { 
+        name: "Microservices", 
+        icon: <Terminal className="h-10 w-10 text-gray-800 dark:text-gray-200" />, 
+        description: "Distributed system architecture"
+      }
     ]
   },
   {
     name: "Database",
     icon: <Database className="h-5 w-5" />,
     skills: [
-      { name: "MongoDB", level: 87 },
-      { name: "PostgreSQL", level: 83 },
-      { name: "Redis", level: 75 },
-      { name: "SQL", level: 85 },
-      { name: "Firebase", level: 80 },
-      { name: "ORM Tools", level: 78 }
+      { 
+        name: "MongoDB", 
+        icon: <Database className="h-10 w-10 text-green-500" />, 
+        description: "NoSQL database for modern applications"
+      },
+      { 
+        name: "PostgreSQL", 
+        icon: <Database className="h-10 w-10 text-blue-400" />, 
+        description: "Advanced open source relational database"
+      },
+      { 
+        name: "Redis", 
+        icon: <Database className="h-10 w-10 text-red-500" />, 
+        description: "In-memory data structure store"
+      },
+      { 
+        name: "SQL", 
+        icon: <Database className="h-10 w-10 text-blue-600" />, 
+        description: "Structured Query Language for databases"
+      },
+      { 
+        name: "Firebase", 
+        icon: <Database className="h-10 w-10 text-yellow-500" />, 
+        description: "Platform for web and mobile applications"
+      },
+      { 
+        name: "ORM Tools", 
+        icon: <Wrench className="h-10 w-10 text-purple-500" />, 
+        description: "Object-Relational Mapping libraries"
+      }
     ]
   },
   {
     name: "Tools",
     icon: <Wrench className="h-5 w-5" />,
     skills: [
-      { name: "Git", level: 90 },
-      { name: "Docker", level: 82 },
-      { name: "AWS", level: 78 },
-      { name: "CI/CD", level: 85 },
-      { name: "Testing", level: 88 },
-      { name: "Agile/Scrum", level: 92 }
+      { 
+        name: "Git", 
+        icon: <Terminal className="h-10 w-10 text-orange-600" />, 
+        description: "Version control system"
+      },
+      { 
+        name: "Docker", 
+        icon: <Laptop className="h-10 w-10 text-blue-500" />, 
+        description: "Containerization platform"
+      },
+      { 
+        name: "AWS", 
+        icon: <Server className="h-10 w-10 text-yellow-600" />, 
+        description: "Cloud computing services"
+      },
+      { 
+        name: "CI/CD", 
+        icon: <Terminal className="h-10 w-10 text-green-600" />, 
+        description: "Continuous integration and deployment"
+      },
+      { 
+        name: "Testing", 
+        icon: <Wrench className="h-10 w-10 text-red-500" />, 
+        description: "Unit, integration, and end-to-end testing"
+      },
+      { 
+        name: "Agile/Scrum", 
+        icon: <Wrench className="h-10 w-10 text-blue-700" />, 
+        description: "Project management methodologies"
+      }
     ]
   }
 ];
@@ -115,18 +212,18 @@ const Skills = () => {
               <TabsContent key={category.name} value={category.name} className="mt-6">
                 <Card>
                   <CardContent className="p-6">
-                    <div className="grid gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                       {category.skills.map((skill, index) => (
-                        <div key={skill.name}>
-                          <div className="flex justify-between items-center mb-2">
-                            <span className="font-medium">{skill.name}</span>
-                            <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                        <div 
+                          key={skill.name} 
+                          className={`bg-muted/50 rounded-lg p-6 flex flex-col items-center text-center transition-all duration-500 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+                          style={{ transitionDelay: `${index * 100}ms` }}
+                        >
+                          <div className="mb-4 bg-background rounded-full p-3 inline-flex items-center justify-center">
+                            {skill.icon}
                           </div>
-                          <Progress 
-                            value={isVisible ? skill.level : 0} 
-                            className="h-2 transition-all duration-1000 ease-out"
-                            style={{ transitionDelay: `${index * 150}ms` }}
-                          />
+                          <h3 className="font-medium text-lg mb-2">{skill.name}</h3>
+                          <p className="text-sm text-muted-foreground">{skill.description}</p>
                         </div>
                       ))}
                     </div>
