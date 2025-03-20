@@ -21,16 +21,6 @@ const Header = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  const handleResumeDownload = () => {
-    // Create a link to the resume file and trigger download
-    const link = document.createElement('a');
-    link.href = '/john-doe-resume.pdf';
-    link.download = 'john-doe-resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   const navLinks = [
     { name: 'About', href: '#about' },
     { name: 'Experience', href: '#experience' },
@@ -42,7 +32,7 @@ const Header = () => {
   return (
     <header
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b',
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b print:hidden',
         isScrolled
           ? 'backdrop-blur-lg bg-white/80 dark:bg-black/30 border-gray-200/20'
           : 'bg-transparent border-transparent'
@@ -54,7 +44,7 @@ const Header = () => {
             to="/"
             className="text-xl font-semibold tracking-tight font-display animate-fade-in"
           >
-            John Doe
+            Gaurav Agarwal
           </Link>
 
           {/* Theme toggle button for desktop */}
@@ -79,7 +69,7 @@ const Header = () => {
                 size="sm"
                 className="ml-4 animate-fade-down opacity-0"
                 style={{ animationDelay: `${navLinks.length * 50}ms`, animationFillMode: 'forwards' }}
-                onClick={handleResumeDownload}
+                onClick={window.print}
               >
                 <Download size={16} className="mr-2" />
                 Resume
@@ -118,12 +108,12 @@ const Header = () => {
                 {link.name}
               </a>
             ))}
-            <Button 
-              variant="outline" 
-              className="mt-4" 
+            <Button
+              variant="outline"
+              className="mt-4"
               onClick={() => {
                 setIsMenuOpen(false);
-                handleResumeDownload();
+                window.print();
               }}
             >
               <Download size={16} className="mr-2" />
