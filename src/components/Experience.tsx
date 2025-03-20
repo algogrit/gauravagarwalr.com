@@ -1,8 +1,14 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Separator } from '@/components/ui/separator';
-import { BadgeCheck } from 'lucide-react';
+import { BadgeCheck, FolderOpen, ChevronDown, ChevronUp } from 'lucide-react';
+
+type SubProject = {
+  name: string;
+  description: string;
+  link?: string;
+};
 
 type ExperienceItem = {
   company: string;
@@ -12,6 +18,7 @@ type ExperienceItem = {
   achievements: string[];
   technologies: string[];
   current?: boolean;
+  projects?: SubProject[];
 };
 
 const experienceData: ExperienceItem[] = [
@@ -26,7 +33,24 @@ const experienceData: ExperienceItem[] = [
       "Mentored junior developers and established coding standards for the team"
     ],
     technologies: ["React", "Node.js", "GraphQL", "AWS", "MongoDB"],
-    current: true
+    current: true,
+    projects: [
+      {
+        name: "Client Analytics Platform",
+        description: "Led the development of a real-time dashboard that visualized customer engagement metrics, integrating with multiple data sources and using WebSockets for live updates.",
+        link: "#"
+      },
+      {
+        name: "E-commerce API Overhaul",
+        description: "Redesigned the core API architecture to support higher transaction volumes, implementing a microservices approach with Node.js and GraphQL.",
+        link: "#"
+      },
+      {
+        name: "DevOps Automation Suite",
+        description: "Created a CI/CD pipeline with automated testing, deployment, and monitoring tools that reduced deployment time by 80%.",
+        link: "#"
+      }
+    ]
   },
   {
     company: "Digital Solutions Co.",
@@ -38,7 +62,19 @@ const experienceData: ExperienceItem[] = [
       "Implemented CI/CD pipeline that reduced deployment time by 75%",
       "Built reusable component library used across multiple projects"
     ],
-    technologies: ["JavaScript", "React", "SCSS", "Webpack", "Jest"]
+    technologies: ["JavaScript", "React", "SCSS", "Webpack", "Jest"],
+    projects: [
+      {
+        name: "Component Library",
+        description: "Designed and built a reusable UI component library with over 50 components that was adopted by all frontend teams across the organization.",
+        link: "#"
+      },
+      {
+        name: "Healthcare Portal",
+        description: "Developed a responsive patient management portal for a major healthcare provider, featuring appointment scheduling, medical records access, and secure messaging.",
+        link: "#"
+      }
+    ]
   },
   {
     company: "Startup Innovations",
@@ -50,11 +86,32 @@ const experienceData: ExperienceItem[] = [
       "Contributed to open-source libraries used by the company",
       "Implemented responsive designs across all company products"
     ],
-    technologies: ["HTML/CSS", "JavaScript", "PHP", "MySQL", "Git"]
+    technologies: ["HTML/CSS", "JavaScript", "PHP", "MySQL", "Git"],
+    projects: [
+      {
+        name: "Content Migration Tool",
+        description: "Built an automated tool that streamlined the process of migrating content from legacy systems to new platforms, resulting in significant time savings.",
+        link: "#"
+      },
+      {
+        name: "Responsive Web Design Implementation",
+        description: "Converted existing web applications to responsive designs, ensuring seamless user experience across all device types and screen sizes.",
+        link: "#"
+      }
+    ]
   }
 ];
 
 const Experience = () => {
+  const [expandedProjects, setExpandedProjects] = useState<Record<string, boolean>>({});
+
+  const toggleProjects = (company: string) => {
+    setExpandedProjects(prev => ({
+      ...prev,
+      [company]: !prev[company]
+    }));
+  };
+
   return (
     <section id="experience" className="py-24 sm:py-32 bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -100,6 +157,42 @@ const Experience = () => {
                   ))}
                 </ul>
               </div>
+              
+              {job.projects && job.projects.length > 0 && (
+                <div className="mb-4">
+                  <button 
+                    onClick={() => toggleProjects(job.company)}
+                    className="flex items-center text-sm uppercase tracking-wider text-muted-foreground font-medium mb-2 hover:text-primary transition-colors"
+                  >
+                    <FolderOpen className="h-4 w-4 mr-2" />
+                    Notable Projects
+                    {expandedProjects[job.company] ? (
+                      <ChevronUp className="h-4 w-4 ml-2" />
+                    ) : (
+                      <ChevronDown className="h-4 w-4 ml-2" />
+                    )}
+                  </button>
+                  
+                  {expandedProjects[job.company] && (
+                    <div className="mt-3 space-y-4 pl-2 border-l-2 border-primary/20">
+                      {job.projects.map((project, i) => (
+                        <div key={i} className="pl-4">
+                          <h5 className="font-medium text-sm">{project.name}</h5>
+                          <p className="text-sm text-muted-foreground mt-1">{project.description}</p>
+                          {project.link && (
+                            <a 
+                              href={project.link} 
+                              className="text-xs text-primary hover:underline mt-1 inline-block"
+                            >
+                              View Project
+                            </a>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
               
               <div>
                 <h4 className="text-sm uppercase tracking-wider text-muted-foreground font-medium mb-2">Technologies</h4>
