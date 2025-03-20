@@ -1,7 +1,17 @@
 
 import React from 'react';
-import { Monitor, Server, Database, Wrench, Code, 
-         FileCode, Terminal, Laptop, GitBranch, Package } from 'lucide-react';
+import { 
+  Monitor, 
+  Server, 
+  Database, 
+  Wrench, 
+  Code, 
+  FileCode, 
+  Terminal, 
+  Laptop, 
+  GitBranch, 
+  Package 
+} from 'lucide-react';
 
 type SkillCategory = {
   name: string;
