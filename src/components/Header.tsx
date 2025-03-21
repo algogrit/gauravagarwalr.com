@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
@@ -49,7 +48,6 @@ const Header = () => {
 
           {/* Theme toggle button for desktop */}
           <div className="hidden md:flex items-center gap-6">
-            <ThemeToggle className="mr-4" />
             <nav className="flex items-center space-x-8">
               {navLinks.map((link, index) => (
                 <a
@@ -75,6 +73,7 @@ const Header = () => {
                 Resume
               </Button>
             </nav>
+            <ThemeToggle className="mr-4" />
           </div>
 
           {/* Mobile menu button */}
@@ -97,7 +96,6 @@ const Header = () => {
       >
         <div className="container mx-auto px-4 py-3">
           <nav className="flex flex-col space-y-4 py-4">
-            <ThemeToggle className="self-start my-2" />
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -108,17 +106,7 @@ const Header = () => {
                 {link.name}
               </a>
             ))}
-            <Button
-              variant="outline"
-              className="mt-4"
-              onClick={() => {
-                setIsMenuOpen(false);
-                window.print();
-              }}
-            >
-              <Download size={16} className="mr-2" />
-              Download Resume
-            </Button>
+            <ThemeToggle className="self-start my-2" />
           </nav>
         </div>
       </div>
