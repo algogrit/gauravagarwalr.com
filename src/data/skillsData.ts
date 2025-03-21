@@ -332,7 +332,13 @@ export const skillCategories: SkillCategory[] = [
         type: RawIcon,
         filetype: 'png',
         description: "Data visualization for Elasticsearch"
-      }
+      },
+      {
+        name: 'DataDog',
+        label: 'datadog',
+        type: RawIcon,
+        description: 'Cloud monitoring and security platform'
+      },
     ]
   },
   {
