@@ -23,7 +23,7 @@ const Contact = () => {
           </Button>
         </div>
 
-        <iframe title="Talks" className="mx-auto min-w-[560px] min-h-[315px]" src="https://www.youtube.com/embed/videoseries?list=PL7qtxrxCQ5DBhg0p9p8nDx58FvFR2GVe2" allowFullScreen></iframe>
+        <iframe title="Talks" className="mx-auto min-w-[360px] min-h-[200px] sm:min-w-[560px] sm:min-h-[315px]" src="https://www.youtube.com/embed/videoseries?list=PL7qtxrxCQ5DBhg0p9p8nDx58FvFR2GVe2" allowFullScreen></iframe>
 
       </div>
     </section>
