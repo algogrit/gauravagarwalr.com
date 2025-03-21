@@ -114,11 +114,11 @@
   .section-container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20;
   }
-  
+
   .blur-backdrop {
     @apply backdrop-blur-lg bg-white/60 dark:bg-black/30 border border-white/20;
   }
-  
+
   .text-balance {
     text-wrap: balance;
   }

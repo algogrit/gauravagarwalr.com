@@ -57,7 +57,7 @@ const Education = () => {
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 mb-4">
                     <GraduationCap className="h-5 w-5 text-primary" />
-                    <span className="px-2.5 py-0.5 text-xs font-medium rounded-full bg-secondary">
+                    <span className="px-2.5 py-0.5 text-xs font-medium rounded-full bg-secondary print:px-0">
                       {item.period}
                     </span>
                   </div>

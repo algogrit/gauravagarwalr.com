@@ -75,7 +75,7 @@ const About = () => {
                 My approach to development is centered around creating clean, maintainable code that scales well and provides intuitive user experiences. I believe in the power of simplicity and the importance of attention to detail.
               </p>
 
-              <p className="text-lg text-balance leading-relaxed">
+              <p className="text-lg text-balance leading-relaxed print:hidden">
                 When I'm not coding, you'll find me hiking in nature, exploring music, or diving into a good book about technology and innovation.
               </p>
 

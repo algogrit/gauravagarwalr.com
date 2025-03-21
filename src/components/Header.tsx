@@ -4,10 +4,21 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Download, Menu, X } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
+import { useTheme } from '@/contexts/ThemeContext';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
+
+  const prepareAndPrint = () => {
+      if (theme === 'dark') {
+        toggleTheme();
+      }
+      window.scrollTo({left: 0, top: document.body.scrollHeight, behavior: 'smooth'});
+
+      setTimeout(window.print, 800);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,7 +78,7 @@ const Header = () => {
                 size="sm"
                 className="ml-4 animate-fade-down opacity-0"
                 style={{ animationDelay: `${navLinks.length * 50}ms`, animationFillMode: 'forwards' }}
-                onClick={window.print}
+                onClick={prepareAndPrint}
               >
                 <Download size={16} className="mr-2" />
                 Resume

@@ -1,16 +1,9 @@
-
 import React from 'react';
-import { 
-  Monitor, 
-  Server, 
-  Database, 
-  Wrench, 
-  Code, 
-  FileCode, 
-  Terminal, 
-  Laptop, 
-  GitBranch, 
-  Package 
+import {
+  Server,
+  Database,
+  Wrench,
+  FileCode,
 } from 'lucide-react';
 
 type SkillCategory = {
@@ -18,284 +11,395 @@ type SkillCategory = {
   icon: React.ReactNode;
   skills: {
     name: string;
-    icon: React.ReactNode;
+    type: React.ElementType;
+    label: string;
+    filetype?: string;
     description: string;
   }[];
 };
 
+// https://icongr.am/devicon
+const Icongram = ({label, tooltip}) => {
+  const src = `https://icongr.am/devicon/${label}.svg`;
+
+  return React.createElement('img', {src: src, className: "h-6", title: tooltip, alt: tooltip});
+}
+
+const RawIcon = ({label, tooltip, filetype = 'svg'}) => {
+  const src = `/assets/images/skills/${label}.${filetype}`;
+
+  return React.createElement('img', {src: src, className: "h-6", title: tooltip, alt: tooltip});
+}
+
 export const skillCategories: SkillCategory[] = [
   {
-    name: "Frontend",
-    icon: React.createElement(Monitor, { className: "h-5 w-5" }),
+    name: "Programming Languages",
+    icon: React.createElement(FileCode, { className: "h-5 w-5" }),
     skills: [
-      { 
-        name: "HTML/CSS", 
-        icon: React.createElement(Code, { className: "h-6 w-6 text-orange-500" }), 
-        description: "Semantic markup and modern CSS techniques"
+      {
+        name: 'Go',
+        label: 'go-original',
+        type: Icongram,
+        description: 'Fast, concurrent systems programming'
       },
-      { 
-        name: "JavaScript", 
-        icon: React.createElement(FileCode, { className: "h-6 w-6 text-yellow-500" }), 
-        description: "ES6+, DOM manipulation, and async programming"
+      {
+        name: 'Rust',
+        label: 'rust',
+        type: RawIcon,
+        description: 'Memory-safe, high-performance language'
       },
-      { 
-        name: "React", 
-        icon: React.createElement(Code, { className: "h-6 w-6 text-blue-500" }), 
-        description: "Component architecture and state management"
+      {
+        name: 'Elixir',
+        label: 'elixir',
+        type: RawIcon,
+        description: 'Scalable, fault-tolerant functional programming'
       },
-      { 
-        name: "TypeScript", 
-        icon: React.createElement(FileCode, { className: "h-6 w-6 text-blue-700" }), 
-        description: "Type-safe code for robust applications"
+      {
+        name: 'Ruby',
+        label: 'ruby',
+        type: RawIcon,
+        filetype: 'png',
+        description: 'Elegant, dynamic scripting language'
       },
-      { 
-        name: "Tailwind CSS", 
-        icon: React.createElement(Code, { className: "h-6 w-6 text-teal-500" }), 
-        description: "Utility-first CSS framework"
+      {
+        name: 'Erlang',
+        label: 'erlang-original',
+        type: Icongram,
+        description: 'Distributed, fault-tolerant systems'
       },
-      { 
-        name: "Next.js", 
-        icon: React.createElement(Laptop, { className: "h-6 w-6 text-black dark:text-white" }), 
-        description: "React framework for production"
+      {
+        name: 'JavaScript',
+        label: 'javascript-original',
+        type: Icongram,
+        description: "Web's core scripting language"
       },
-      { 
-        name: "Vue.js", 
-        icon: React.createElement(Code, { className: "h-6 w-6 text-green-500" }), 
-        description: "Progressive JavaScript framework"
+      {
+        name: 'Python',
+        label: 'python',
+        type: RawIcon,
+        description: 'Versatile, readable programming language'
       },
-      { 
-        name: "Angular", 
-        icon: React.createElement(Code, { className: "h-6 w-6 text-red-500" }), 
-        description: "Platform for building mobile & desktop web apps"
+      {
+        name: 'HTML5',
+        label: 'html5-original',
+        type: Icongram,
+        description: 'Markup for modern web pages'
       },
-      { 
-        name: "SASS/SCSS", 
-        icon: React.createElement(FileCode, { className: "h-6 w-6 text-pink-500" }), 
-        description: "CSS preprocessor for advanced styling"
+      {
+        name: 'CSS3',
+        label: 'css3-original',
+        type: Icongram,
+        description: 'Styling for responsive web design'
       },
-      { 
-        name: "Redux", 
-        icon: React.createElement(Code, { className: "h-6 w-6 text-purple-500" }), 
-        description: "State management for JavaScript apps"
+      {
+        name: 'Bash',
+        label: 'bash',
+        type: RawIcon,
+        description: 'Scripting for Linux and automation'
       },
-      { 
-        name: "Webpack", 
-        icon: React.createElement(Terminal, { className: "h-6 w-6 text-blue-400" }), 
-        description: "Static module bundler for JavaScript"
+      {
+        name: 'Swift',
+        label: 'swift',
+        type: RawIcon,
+        description: "Apple's modern app development language"
       },
-      { 
-        name: "Vite", 
-        icon: React.createElement(Terminal, { className: "h-6 w-6 text-yellow-400" }), 
-        description: "Next generation frontend tooling"
+      {
+        name: 'Elm',
+        label: 'elm',
+        type: RawIcon,
+        description: 'Functional language for web UI'
+      },
+      {
+        name: 'TypeScript',
+        label: 'typescript-plain',
+        type: Icongram,
+        description: 'Typed JavaScript for large apps'
+      },
+      {
+        name: 'Java',
+        label: 'java-original',
+        type: Icongram,
+        description: "Enterprise-grade, cross-platform language"
       }
     ]
   },
   {
-    name: "Backend",
-    icon: React.createElement(Server, { className: "h-5 w-5" }),
-    skills: [
-      { 
-        name: "Node.js", 
-        icon: React.createElement(Server, { className: "h-6 w-6 text-green-600" }), 
-        description: "JavaScript runtime for server-side applications"
-      },
-      { 
-        name: "Express", 
-        icon: React.createElement(Server, { className: "h-6 w-6 text-gray-600" }), 
-        description: "Web framework for Node.js"
-      },
-      { 
-        name: "Python", 
-        icon: React.createElement(FileCode, { className: "h-6 w-6 text-yellow-600" }), 
-        description: "Versatile language for backend development"
-      },
-      { 
-        name: "GraphQL", 
-        icon: React.createElement(Code, { className: "h-6 w-6 text-pink-600" }), 
-        description: "Query language for APIs"
-      },
-      { 
-        name: "REST API", 
-        icon: React.createElement(Server, { className: "h-6 w-6 text-blue-600" }), 
-        description: "Design and implementation of RESTful services"
-      },
-      { 
-        name: "Microservices", 
-        icon: React.createElement(Terminal, { className: "h-6 w-6 text-gray-800 dark:text-gray-200" }), 
-        description: "Distributed system architecture"
-      },
-      { 
-        name: "Java", 
-        icon: React.createElement(FileCode, { className: "h-6 w-6 text-red-600" }), 
-        description: "Enterprise-grade applications and systems"
-      },
-      { 
-        name: "Spring Boot", 
-        icon: React.createElement(Server, { className: "h-6 w-6 text-green-500" }), 
-        description: "Java-based framework for microservices"
-      },
-      { 
-        name: "C#/.NET", 
-        icon: React.createElement(FileCode, { className: "h-6 w-6 text-purple-600" }), 
-        description: "Enterprise application development"
-      },
-      { 
-        name: "PHP", 
-        icon: React.createElement(FileCode, { className: "h-6 w-6 text-indigo-600" }), 
-        description: "Server-side scripting language"
-      },
-      { 
-        name: "Ruby on Rails", 
-        icon: React.createElement(Server, { className: "h-6 w-6 text-red-500" }), 
-        description: "Web application framework"
-      },
-      { 
-        name: "Django", 
-        icon: React.createElement(Server, { className: "h-6 w-6 text-green-700" }), 
-        description: "High-level Python web framework"
-      }
-    ]
-  },
-  {
-    name: "Database",
-    icon: React.createElement(Database, { className: "h-5 w-5" }),
-    skills: [
-      { 
-        name: "MongoDB", 
-        icon: React.createElement(Database, { className: "h-6 w-6 text-green-500" }), 
-        description: "NoSQL database for modern applications"
-      },
-      { 
-        name: "PostgreSQL", 
-        icon: React.createElement(Database, { className: "h-6 w-6 text-blue-400" }), 
-        description: "Advanced open source relational database"
-      },
-      { 
-        name: "Redis", 
-        icon: React.createElement(Database, { className: "h-6 w-6 text-red-500" }), 
-        description: "In-memory data structure store"
-      },
-      { 
-        name: "SQL", 
-        icon: React.createElement(Database, { className: "h-6 w-6 text-blue-600" }), 
-        description: "Structured Query Language for databases"
-      },
-      { 
-        name: "Firebase", 
-        icon: React.createElement(Database, { className: "h-6 w-6 text-yellow-500" }), 
-        description: "Platform for web and mobile applications"
-      },
-      { 
-        name: "ORM Tools", 
-        icon: React.createElement(Wrench, { className: "h-6 w-6 text-purple-500" }), 
-        description: "Object-Relational Mapping libraries"
-      },
-      { 
-        name: "MySQL", 
-        icon: React.createElement(Database, { className: "h-6 w-6 text-blue-500" }), 
-        description: "Open-source relational database management system"
-      },
-      { 
-        name: "SQLite", 
-        icon: React.createElement(Database, { className: "h-6 w-6 text-blue-300" }), 
-        description: "Self-contained, serverless SQL database engine"
-      },
-      { 
-        name: "DynamoDB", 
-        icon: React.createElement(Database, { className: "h-6 w-6 text-yellow-600" }), 
-        description: "Fast and flexible NoSQL database service"
-      },
-      { 
-        name: "Cassandra", 
-        icon: React.createElement(Database, { className: "h-6 w-6 text-blue-800" }), 
-        description: "Distributed NoSQL database management system"
-      },
-      { 
-        name: "Neo4j", 
-        icon: React.createElement(Database, { className: "h-6 w-6 text-teal-600" }), 
-        description: "Graph database management system"
-      },
-      { 
-        name: "Elasticsearch", 
-        icon: React.createElement(Database, { className: "h-6 w-6 text-yellow-400" }), 
-        description: "Distributed, RESTful search and analytics engine"
-      }
-    ]
-  },
-  {
-    name: "Tools",
+    name: "Tools & Frameworks",
     icon: React.createElement(Wrench, { className: "h-5 w-5" }),
     skills: [
-      { 
-        name: "Git", 
-        icon: React.createElement(GitBranch, { className: "h-6 w-6 text-orange-600" }), 
-        description: "Version control system"
+      {
+        name: 'Gorilla',
+        label: 'gorilla',
+        type: RawIcon,
+        filetype: 'png',
+        description: 'Go web toolkit for robust APIs'
       },
-      { 
-        name: "Docker", 
-        icon: React.createElement(Package, { className: "h-6 w-6 text-blue-500" }), 
-        description: "Containerization platform"
+      {
+        name: 'Rails',
+        label: 'rails-original-wordmark',
+        type: Icongram,
+        description: 'Ruby web framework for rapid development'
       },
-      { 
-        name: "AWS", 
-        icon: React.createElement(Server, { className: "h-6 w-6 text-yellow-600" }), 
-        description: "Cloud computing services"
+      {
+        name: 'Sinatra',
+        label: 'sinatra',
+        type: RawIcon,
+        description: 'Lightweight Ruby web framework'
       },
-      { 
-        name: "CI/CD", 
-        icon: React.createElement(Terminal, { className: "h-6 w-6 text-green-600" }), 
-        description: "Continuous integration and deployment"
+      {
+        name: 'Phoenix',
+        label: 'phoenix',
+        type: RawIcon,
+        description: 'Elixir web framework for real-time apps'
       },
-      { 
-        name: "Testing", 
-        icon: React.createElement(Wrench, { className: "h-6 w-6 text-red-500" }), 
-        description: "Unit, integration, and end-to-end testing"
+      {
+        name: 'React',
+        label: 'react-original',
+        type: Icongram,
+        description: 'Declarative UI library for web apps'
       },
-      { 
-        name: "Agile/Scrum", 
-        icon: React.createElement(Wrench, { className: "h-6 w-6 text-blue-700" }), 
-        description: "Project management methodologies"
+      {
+        name: 'Vue',
+        label: 'vue',
+        type: RawIcon,
+        description: 'Progressive JavaScript framework for UI'
       },
-      { 
-        name: "Kubernetes", 
-        icon: React.createElement(Server, { className: "h-6 w-6 text-blue-600" }), 
-        description: "Container orchestration platform"
+      {
+        name: 'Lodash',
+        label: 'lodash',
+        type: RawIcon,
+        description: 'Utility library for JavaScript'
       },
-      { 
-        name: "Jenkins", 
-        icon: React.createElement(Terminal, { className: "h-6 w-6 text-black dark:text-white" }), 
-        description: "Open source automation server"
+      {
+        name: 'Bootstrap',
+        label: 'bootstrap-plain',
+        type: Icongram,
+        description: 'CSS framework for responsive design'
       },
-      { 
-        name: "Terraform", 
-        icon: React.createElement(Wrench, { className: "h-6 w-6 text-purple-600" }), 
-        description: "Infrastructure as code software tool"
+      {
+        name: 'Webpack',
+        label: 'webpack',
+        type: RawIcon,
+        description: 'JavaScript bundler and module loader'
       },
-      { 
-        name: "Prometheus", 
-        icon: React.createElement(Terminal, { className: "h-6 w-6 text-orange-500" }), 
-        description: "Monitoring and alerting toolkit"
+      {
+        name: 'Babel',
+        label: 'babel',
+        type: RawIcon,
+        description: 'JavaScript compiler for modern features'
       },
-      { 
-        name: "Jira", 
-        icon: React.createElement(Wrench, { className: "h-6 w-6 text-blue-500" }), 
-        description: "Issue tracking and project management"
+      {
+        name: 'Node.js',
+        label: 'node-js',
+        type: RawIcon,
+        description: 'JavaScript runtime for server-side apps'
       },
-      { 
-        name: "GitHub Actions", 
-        icon: React.createElement(GitBranch, { className: "h-6 w-6 text-gray-700 dark:text-gray-300" }), 
-        description: "Automate workflows directly from GitHub"
+      {
+        name: 'Less',
+        label: 'less-plain-wordmark',
+        type: Icongram,
+        description: 'CSS preprocessor for maintainable styles'
       },
-      { 
-        name: "Grafana", 
-        icon: React.createElement(Terminal, { className: "h-6 w-6 text-orange-400" }), 
-        description: "Analytics and monitoring solution"
+      {
+        name: 'SASS',
+        label: 'sass-original',
+        type: Icongram,
+        description: 'CSS extension with variables & nesting'
       },
-      { 
-        name: "Ansible", 
-        icon: React.createElement(Terminal, { className: "h-6 w-6 text-red-600" }), 
-        description: "IT automation and configuration management"
+      {
+        name: 'D3.js',
+        label: 'd3',
+        type: RawIcon,
+        description: 'Data visualization library for web'
+      },
+      {
+        name: 'VTK.js',
+        label: 'vtk-js',
+        type: RawIcon,
+        description: "3D visualization library for the web"
+      }
+    ]
+  },
+  {
+    name: "Infrastructure & Data",
+    icon: React.createElement(Database, { className: "h-5 w-5" }),
+    skills: [
+      {
+        name: 'Kafka',
+        label: 'kafka',
+        type: RawIcon,
+        description: 'Distributed event streaming platform'
+      },
+      {
+        name: 'Postgres',
+        label: 'postgresql-original',
+        type: Icongram,
+        description: 'Advanced open-source relational database'
+      },
+      {
+        name: 'MySQL',
+        label: 'mysql-plain',
+        type: Icongram,
+        description: 'Popular open-source relational database'
+      },
+      {
+        name: 'Redis',
+        label: 'redis-original',
+        type: Icongram,
+        description: 'In-memory key-value data store'
+      },
+      {
+        name: 'Sqlite',
+        label: 'sqlite',
+        type: RawIcon,
+        description: 'Lightweight embedded SQL database'
+      },
+      {
+        name: 'Apache Beam',
+        label: 'apache-beam',
+        type: RawIcon,
+        filetype: 'png',
+        description: 'Unified batch and stream processing'
+      },
+      {
+        name: 'Docker',
+        label: 'docker-original',
+        type: Icongram,
+        description: 'Containerization platform for applications'
+      },
+      {
+        name: 'Kubernetes',
+        label: 'kubernetes',
+        type: RawIcon,
+        description: 'Container orchestration for scalability'
+      },
+      {
+        name: 'Nginx',
+        label: 'nginx-original',
+        type: Icongram,
+        description: 'High-performance web server'
+      },
+      {
+        name: 'Git',
+        label: 'git-original',
+        type: Icongram,
+        description: 'Version control for source code'
+      },
+      {
+        name: 'Fastlane',
+        label: 'fastlane',
+        type: RawIcon,
+        filetype: 'png',
+        description: 'Automates mobile app deployments'
+      },
+      {
+        name: 'CircleCI',
+        label: 'circleci',
+        type: RawIcon,
+        description: 'Continuous integration and deployment'
+      },
+      {
+        name: 'Jenkins',
+        label: 'jenkins',
+        type: RawIcon,
+        filetype: 'png',
+        description: 'Automation server for CI/CD'
+      },
+      {
+        name: 'Terraform',
+        label: 'terraform',
+        type: RawIcon,
+        filetype: 'png',
+        description: 'Infrastructure as code tool'
+      },
+      {
+        name: 'Elasticsearch',
+        label: 'elasticsearch',
+        type: RawIcon,
+        filetype: 'png',
+        description: 'Search and analytics engine'
+      },
+      {
+        name: 'Fluentd',
+        label: 'fluentd',
+        type: RawIcon,
+        filetype: 'png',
+        description: 'Log collection and aggregation'
+      },
+      {
+        name: 'Kibana',
+        label: 'kibana',
+        type: RawIcon,
+        filetype: 'png',
+        description: "Data visualization for Elasticsearch"
+      }
+    ]
+  },
+  {
+    name: "Platforms",
+    icon: React.createElement(Server, { className: "h-5 w-5" }),
+    skills: [
+      {
+        name: 'Linux',
+        label: 'linux-original',
+        type: Icongram,
+        description: 'Open-source operating system'
+      },
+      {
+        name: 'Debian',
+        label: 'debian-plain',
+        type: Icongram,
+        description: 'Stable Linux distribution'
+      },
+      {
+        name: 'Raspberry Pi',
+        label: 'raspberry-pi',
+        type: RawIcon,
+        description: 'Single-board computer for projects'
+      },
+      {
+        name: 'Ubuntu',
+        label: 'ubuntu',
+        type: RawIcon,
+        filetype: 'png',
+        description: 'User-friendly Linux distribution'
+      },
+      {
+        name: 'iOS',
+        label: 'apple-original',
+        type: Icongram,
+        description: "Apple's mobile operating system"
+      },
+      {
+        name: 'AWS',
+        label: 'amazonwebservices-original',
+        type: Icongram,
+        description: 'Cloud computing by Amazon'
+      },
+      {
+        name: 'Google Cloud Platform',
+        label: 'google-cloud-platform',
+        type: RawIcon,
+        description: "Google's cloud computing services"
+      },
+      {
+        name: 'Azure',
+        label: 'azure',
+        type: RawIcon,
+        description: "Microsoft's cloud computing platform"
+      },
+      {
+        name: 'Heroku',
+        label: 'heroku-plain',
+        type: Icongram,
+        description: 'PaaS for deploying apps'
+      },
+      {
+        name: 'Digital Ocean',
+        label: 'digital-ocean',
+        type: RawIcon,
+        description: "Cloud computing for developers"
       }
     ]
   }
-];
+]

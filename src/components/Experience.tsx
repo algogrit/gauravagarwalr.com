@@ -233,7 +233,7 @@ const Experience = () => {
           {experienceData.map((job, index) => (
 
             <div
-              key={job.company}
+              key={index}
               className={cn(
                 "relative pl-8 pb-12",
                 index !== experienceData.length - 1 && "border-l border-border print:border-none",
@@ -263,7 +263,7 @@ const Experience = () => {
 
               <p className="text-balance mb-4">{job.description}</p>
 
-              <div className="mb-4">
+              <div className="mb-4 print:break-inside-avoid">
                 <h4 className="text-sm uppercase tracking-wider text-muted-foreground font-medium mb-2">Key Achievements</h4>
                 <ul className="space-y-2">
                   {job.achievements.map((achievement, i) => (
@@ -283,7 +283,7 @@ const Experience = () => {
 
                   <div className="mt-3 space-y-4 pl-2 print:pl-0">
                     {job.projects.map((project, i) => (
-                      <div key={i} className="pl-4">
+                      <div key={i} className="pl-4 print:break-inside-avoid">
                         <h5 className="font-medium text-sm">{project.name}</h5>
                         <p className="text-sm text-muted-foreground mt-1">{project.description}</p>
 
