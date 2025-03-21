@@ -1,7 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { skillCategories } from '@/data/skillsData';
 
 const Skills = () => {
@@ -40,39 +39,35 @@ const Skills = () => {
         </div>
         
         <div ref={skillsRef} className="max-w-5xl mx-auto animate-fade-up opacity-0" style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}>
-          <Accordion type="multiple" defaultValue={skillCategories.map(category => category.name)} className="space-y-4">
+          <div className="space-y-4">
             {skillCategories.map((category) => (
-              <AccordionItem key={category.name} value={category.name} className="border rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-4 py-3 bg-muted/30 hover:bg-muted/50">
-                  <div className="flex items-center gap-2">
-                    {category.icon}
-                    <span className="font-medium">{category.name}</span>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent>
-                  <Card>
-                    <CardContent className="p-4">
-                      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3">
-                        {category.skills.map((skill, index) => (
-                          <div 
-                            key={skill.name} 
-                            className={`bg-muted/50 rounded-lg p-3 flex flex-col items-center text-center transition-all duration-500 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
-                            style={{ transitionDelay: `${index * 50}ms` }}
-                          >
-                            <div className="mb-2 bg-background rounded-full p-2 inline-flex items-center justify-center">
-                              {skill.icon}
-                            </div>
-                            <h3 className="font-medium text-sm mb-1">{skill.name}</h3>
-                            <p className="text-xs text-muted-foreground">{skill.description}</p>
+              <div key={category.name} className="border rounded-lg overflow-hidden">
+                <div className="px-4 py-3 bg-muted/30 flex items-center gap-2 font-medium">
+                  {category.icon}
+                  <span>{category.name}</span>
+                </div>
+                <Card>
+                  <CardContent className="p-4">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3">
+                      {category.skills.map((skill, index) => (
+                        <div 
+                          key={skill.name} 
+                          className={`bg-muted/50 rounded-lg p-3 flex flex-col items-center text-center transition-all duration-500 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+                          style={{ transitionDelay: `${index * 50}ms` }}
+                        >
+                          <div className="mb-2 bg-background rounded-full p-2 inline-flex items-center justify-center">
+                            {skill.icon}
                           </div>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                </AccordionContent>
-              </AccordionItem>
+                          <h3 className="font-medium text-sm mb-1">{skill.name}</h3>
+                          <p className="text-xs text-muted-foreground">{skill.description}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
             ))}
-          </Accordion>
+          </div>
         </div>
       </div>
     </section>
