@@ -1,14 +1,14 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { cn } from '@/lib/utils';
 import { Separator } from '@/components/ui/separator';
-import { BadgeCheck, FolderOpen, ChevronDown, ChevronUp } from 'lucide-react';
+import { BadgeCheck, FolderOpen } from 'lucide-react';
 
 type SubProject = {
   name: string;
   description: string;
   link?: string;
-  technologies: string[]; // Added technologies to SubProject
+  technologies: string[];
 };
 
 type ExperienceItem = {
@@ -107,15 +107,6 @@ const experienceData: ExperienceItem[] = [
 ];
 
 const Experience = () => {
-  const [expandedProjects, setExpandedProjects] = useState<Record<string, boolean>>({});
-
-  const toggleProjects = (company: string) => {
-    setExpandedProjects(prev => ({
-      ...prev,
-      [company]: !prev[company]
-    }));
-  };
-
   return (
     <section id="experience" className="py-24 sm:py-32 bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -164,50 +155,39 @@ const Experience = () => {
               
               {job.projects && job.projects.length > 0 && (
                 <div className="mb-4">
-                  <button 
-                    onClick={() => toggleProjects(job.company)}
-                    className="flex items-center text-sm uppercase tracking-wider text-muted-foreground font-medium mb-2 hover:text-primary transition-colors"
-                  >
+                  <div className="flex items-center text-sm uppercase tracking-wider text-muted-foreground font-medium mb-2">
                     <FolderOpen className="h-4 w-4 mr-2" />
                     Notable Projects
-                    {expandedProjects[job.company] ? (
-                      <ChevronUp className="h-4 w-4 ml-2" />
-                    ) : (
-                      <ChevronDown className="h-4 w-4 ml-2" />
-                    )}
-                  </button>
+                  </div>
                   
-                  {expandedProjects[job.company] && (
-                    <div className="mt-3 space-y-4 pl-2 border-l-2 border-primary/20">
-                      {job.projects.map((project, i) => (
-                        <div key={i} className="pl-4">
-                          <h5 className="font-medium text-sm">{project.name}</h5>
-                          <p className="text-sm text-muted-foreground mt-1">{project.description}</p>
-                          
-                          {/* Added technologies section for each project */}
-                          <div className="mt-2">
-                            <h6 className="text-xs uppercase tracking-wider text-muted-foreground font-medium mb-1">Technologies</h6>
-                            <div className="flex flex-wrap gap-1">
-                              {project.technologies.map((tech) => (
-                                <span key={tech} className="px-1.5 py-0.5 bg-secondary rounded text-xs">
-                                  {tech}
-                                </span>
-                              ))}
-                            </div>
+                  <div className="mt-3 space-y-4 pl-2 border-l-2 border-primary/20">
+                    {job.projects.map((project, i) => (
+                      <div key={i} className="pl-4">
+                        <h5 className="font-medium text-sm">{project.name}</h5>
+                        <p className="text-sm text-muted-foreground mt-1">{project.description}</p>
+                        
+                        <div className="mt-2">
+                          <h6 className="text-xs uppercase tracking-wider text-muted-foreground font-medium mb-1">Technologies</h6>
+                          <div className="flex flex-wrap gap-1">
+                            {project.technologies.map((tech) => (
+                              <span key={tech} className="px-1.5 py-0.5 bg-secondary rounded text-xs">
+                                {tech}
+                              </span>
+                            ))}
                           </div>
-                          
-                          {project.link && (
-                            <a 
-                              href={project.link} 
-                              className="text-xs text-primary hover:underline mt-2 inline-block"
-                            >
-                              View Project
-                            </a>
-                          )}
                         </div>
-                      ))}
-                    </div>
-                  )}
+                        
+                        {project.link && (
+                          <a 
+                            href={project.link} 
+                            className="text-xs text-primary hover:underline mt-2 inline-block"
+                          >
+                            View Project
+                          </a>
+                        )}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
