@@ -8,6 +8,7 @@ type SubProject = {
   name: string;
   description: string;
   link?: string;
+  technologies: string[]; // Added technologies to SubProject
 };
 
 type ExperienceItem = {
@@ -16,7 +17,6 @@ type ExperienceItem = {
   period: string;
   description: string;
   achievements: string[];
-  technologies: string[];
   current?: boolean;
   projects?: SubProject[];
 };
@@ -32,23 +32,25 @@ const experienceData: ExperienceItem[] = [
       "Optimized database queries leading to a 40% improvement in application performance",
       "Mentored junior developers and established coding standards for the team"
     ],
-    technologies: ["React", "Node.js", "GraphQL", "AWS", "MongoDB"],
     current: true,
     projects: [
       {
         name: "Client Analytics Platform",
         description: "Led the development of a real-time dashboard that visualized customer engagement metrics, integrating with multiple data sources and using WebSockets for live updates.",
-        link: "#"
+        link: "#",
+        technologies: ["React", "Node.js", "WebSockets", "MongoDB"]
       },
       {
         name: "E-commerce API Overhaul",
         description: "Redesigned the core API architecture to support higher transaction volumes, implementing a microservices approach with Node.js and GraphQL.",
-        link: "#"
+        link: "#",
+        technologies: ["Node.js", "GraphQL", "MongoDB", "AWS"]
       },
       {
         name: "DevOps Automation Suite",
         description: "Created a CI/CD pipeline with automated testing, deployment, and monitoring tools that reduced deployment time by 80%.",
-        link: "#"
+        link: "#",
+        technologies: ["AWS", "Docker", "Jenkins", "Terraform"]
       }
     ]
   },
@@ -62,17 +64,18 @@ const experienceData: ExperienceItem[] = [
       "Implemented CI/CD pipeline that reduced deployment time by 75%",
       "Built reusable component library used across multiple projects"
     ],
-    technologies: ["JavaScript", "React", "SCSS", "Webpack", "Jest"],
     projects: [
       {
         name: "Component Library",
         description: "Designed and built a reusable UI component library with over 50 components that was adopted by all frontend teams across the organization.",
-        link: "#"
+        link: "#",
+        technologies: ["React", "SCSS", "Storybook", "Jest"]
       },
       {
         name: "Healthcare Portal",
         description: "Developed a responsive patient management portal for a major healthcare provider, featuring appointment scheduling, medical records access, and secure messaging.",
-        link: "#"
+        link: "#",
+        technologies: ["JavaScript", "React", "SCSS", "Webpack"]
       }
     ]
   },
@@ -86,17 +89,18 @@ const experienceData: ExperienceItem[] = [
       "Contributed to open-source libraries used by the company",
       "Implemented responsive designs across all company products"
     ],
-    technologies: ["HTML/CSS", "JavaScript", "PHP", "MySQL", "Git"],
     projects: [
       {
         name: "Content Migration Tool",
         description: "Built an automated tool that streamlined the process of migrating content from legacy systems to new platforms, resulting in significant time savings.",
-        link: "#"
+        link: "#",
+        technologies: ["PHP", "MySQL", "JavaScript"]
       },
       {
         name: "Responsive Web Design Implementation",
         description: "Converted existing web applications to responsive designs, ensuring seamless user experience across all device types and screen sizes.",
-        link: "#"
+        link: "#",
+        technologies: ["HTML/CSS", "JavaScript", "Bootstrap"]
       }
     ]
   }
@@ -179,10 +183,23 @@ const Experience = () => {
                         <div key={i} className="pl-4">
                           <h5 className="font-medium text-sm">{project.name}</h5>
                           <p className="text-sm text-muted-foreground mt-1">{project.description}</p>
+                          
+                          {/* Added technologies section for each project */}
+                          <div className="mt-2">
+                            <h6 className="text-xs uppercase tracking-wider text-muted-foreground font-medium mb-1">Technologies</h6>
+                            <div className="flex flex-wrap gap-1">
+                              {project.technologies.map((tech) => (
+                                <span key={tech} className="px-1.5 py-0.5 bg-secondary rounded text-xs">
+                                  {tech}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                          
                           {project.link && (
                             <a 
                               href={project.link} 
-                              className="text-xs text-primary hover:underline mt-1 inline-block"
+                              className="text-xs text-primary hover:underline mt-2 inline-block"
                             >
                               View Project
                             </a>
@@ -193,17 +210,6 @@ const Experience = () => {
                   )}
                 </div>
               )}
-              
-              <div>
-                <h4 className="text-sm uppercase tracking-wider text-muted-foreground font-medium mb-2">Technologies</h4>
-                <div className="flex flex-wrap gap-2">
-                  {job.technologies.map((tech) => (
-                    <span key={tech} className="px-2 py-1 bg-secondary rounded text-sm">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
             </div>
           ))}
         </div>
