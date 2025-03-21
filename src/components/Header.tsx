@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Download, Menu, X } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -56,6 +57,36 @@ const Header = () => {
             John Doe
           </Link>
 
+          {/* Theme toggle button for desktop */}
+          <div className="hidden md:flex items-center gap-6">
+            <ThemeToggle className="mr-4" />
+            <nav className="flex items-center space-x-8">
+              {navLinks.map((link, index) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className={cn(
+                    'text-sm font-medium transition-colors hover:text-primary/90 animate-fade-down',
+                    'opacity-0'
+                  )}
+                  style={{ animationDelay: `${index * 50}ms`, animationFillMode: 'forwards' }}
+                >
+                  {link.name}
+                </a>
+              ))}
+              <Button
+                variant="outline"
+                size="sm"
+                className="ml-4 animate-fade-down opacity-0"
+                style={{ animationDelay: `${navLinks.length * 50}ms`, animationFillMode: 'forwards' }}
+                onClick={handleResumeDownload}
+              >
+                <Download size={16} className="mr-2" />
+                Resume
+              </Button>
+            </nav>
+          </div>
+
           {/* Mobile menu button */}
           <button
             className="md:hidden flex items-center p-2"
@@ -64,33 +95,6 @@ const Header = () => {
           >
             {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
-
-          {/* Desktop navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link, index) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className={cn(
-                  'text-sm font-medium transition-colors hover:text-primary/90 animate-fade-down',
-                  'opacity-0'
-                )}
-                style={{ animationDelay: `${index * 50}ms`, animationFillMode: 'forwards' }}
-              >
-                {link.name}
-              </a>
-            ))}
-            <Button
-              variant="outline"
-              size="sm"
-              className="ml-4 animate-fade-down opacity-0"
-              style={{ animationDelay: `${navLinks.length * 50}ms`, animationFillMode: 'forwards' }}
-              onClick={handleResumeDownload}
-            >
-              <Download size={16} className="mr-2" />
-              Resume
-            </Button>
-          </nav>
         </div>
       </div>
 
@@ -103,6 +107,7 @@ const Header = () => {
       >
         <div className="container mx-auto px-4 py-3">
           <nav className="flex flex-col space-y-4 py-4">
+            <ThemeToggle className="self-start my-2" />
             {navLinks.map((link) => (
               <a
                 key={link.name}
