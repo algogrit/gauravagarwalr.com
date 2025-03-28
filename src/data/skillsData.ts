@@ -293,6 +293,12 @@ export const skillCategories: SkillCategory[] = [
         description: 'Automates mobile app deployments'
       },
       {
+        name: 'Github Actions',
+        label: 'github-actions',
+        type: RawIcon,
+        description: 'CI/CD automation for GitHub'
+      },
+      {
         name: 'CircleCI',
         label: 'circleci',
         type: RawIcon,
