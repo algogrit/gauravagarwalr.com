@@ -22,9 +22,6 @@ const Contact = () => {
             Contact Me
           </Button>
         </div>
-
-        <iframe title="Talks" className="mx-auto min-w-[360px] min-h-[200px] sm:min-w-[560px] sm:min-h-[315px]" src="https://www.youtube.com/embed?listType=playlist&list=PL7qtxrxCQ5DBhg0p9p8nDx58FvFR2GVe2" allowFullScreen></iframe>
-
       </div>
     </section>
   );
